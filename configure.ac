@@ -21,6 +21,7 @@ PKG_CHECK_MODULES(DBUS_GLIB, dbus-glib-1)
 AC_OUTPUT([
         Makefile
         libhal-glib/Makefile
+        libhal-panel-glib/Makefile
         dalston/Makefile
         src/Makefile
 ])
