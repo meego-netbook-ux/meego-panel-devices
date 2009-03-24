@@ -17,6 +17,7 @@ CFLAGS="$CFLAGS -Wall"
 
 PKG_CHECK_MODULES(GLIB, glib-2.0 >= 2.14)
 PKG_CHECK_MODULES(DBUS_GLIB, dbus-glib-1)
+PKG_CHECK_MODULES(GTK, gtk+-2.0)
 
 AC_OUTPUT([
         Makefile
