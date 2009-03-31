@@ -28,4 +28,6 @@ AC_OUTPUT([
         libgvc/Makefile
         dalston/Makefile
         tests/Makefile
+        data/Makefile
+        data/icons/Makefile
 ])
