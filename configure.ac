@@ -27,5 +27,5 @@ AC_OUTPUT([
         libhal-panel-glib/Makefile
         libgvc/Makefile
         dalston/Makefile
-        src/Makefile
+        tests/Makefile
 ])

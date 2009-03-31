@@ -1,1 +1,1 @@
-SUBDIRS = libhal-glib libhal-panel-glib libgvc dalston src
+SUBDIRS = libhal-glib libhal-panel-glib libgvc dalston tests
