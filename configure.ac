@@ -30,4 +30,5 @@ AC_OUTPUT([
         tests/Makefile
         data/Makefile
         data/icons/Makefile
+        src/Makefile
 ])
