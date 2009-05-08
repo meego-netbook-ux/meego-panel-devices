@@ -38,6 +38,7 @@ AC_OUTPUT([
         Makefile
         libhal-glib/Makefile
         libhal-panel-glib/Makefile
+        libhal-power-glib/Makefile
         libgvc/Makefile
         dalston/Makefile
         tests/Makefile

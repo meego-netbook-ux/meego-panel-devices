@@ -1,1 +1,1 @@
-SUBDIRS = libhal-glib libhal-panel-glib libgvc dalston data src tests po
+SUBDIRS = libhal-glib libhal-panel-glib libhal-power-glib libgvc dalston data src tests po
