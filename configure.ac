@@ -34,6 +34,7 @@ PKG_CHECK_MODULES(GTK, gtk+-2.0)
 PKG_CHECK_MODULES(PULSE, libpulse-mainloop-glib >= 0.9.10)
 PKG_CHECK_MODULES(CANBERRA, libcanberra-gtk)
 PKG_CHECK_MODULES(NBTK_GTK, nbtk-gtk-1.0)
+PKG_CHECK_MODULES(LIBNOTIFY, libnotify)
 
 AC_OUTPUT([
         Makefile
