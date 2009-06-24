@@ -36,6 +36,7 @@ PKG_CHECK_MODULES(CANBERRA, libcanberra-gtk)
 PKG_CHECK_MODULES(NBTK_GTK, nbtk-gtk-1.0)
 PKG_CHECK_MODULES(LIBNOTIFY, libnotify)
 PKG_CHECK_MODULES(GCONF, gconf-2.0)
+PKG_CHECK_MODULES(MPL_GTK, moblin-panel-gtk)
 
 SHAVE_INIT([.], [enable])
 
