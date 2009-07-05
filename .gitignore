@@ -26,6 +26,8 @@ ltmain.sh
 missing
 mkinstalldirs
 omf.make
+shave
+shave-libtool
 stamp-*
 xmldocs.make
 

@@ -1,6 +1,7 @@
 AC_PREREQ(2.53)
 AC_INIT(dalston, 0.0.28)
 AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
+AC_CONFIG_MACRO_DIR([m4])
 AM_CONFIG_HEADER(config.h)
 
 AC_CANONICAL_HOST
@@ -36,8 +37,13 @@ PKG_CHECK_MODULES(NBTK_GTK, nbtk-gtk-1.0)
 PKG_CHECK_MODULES(LIBNOTIFY, libnotify)
 PKG_CHECK_MODULES(GCONF, gconf-2.0)
 
+SHAVE_INIT([.], [enable])
+
 AC_OUTPUT([
         Makefile
+        shave
+        shave-libtool
+        m4/Makefile
         libhal-glib/Makefile
         libhal-panel-glib/Makefile
         libhal-power-glib/Makefile
