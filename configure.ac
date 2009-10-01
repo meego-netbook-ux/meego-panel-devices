@@ -50,6 +50,7 @@ AC_OUTPUT([
         libhal-panel-glib/Makefile
         libhal-power-glib/Makefile
         libgvc/Makefile
+        libegg-idletime/Makefile
         dalston/Makefile
         tests/Makefile
         data/Makefile
