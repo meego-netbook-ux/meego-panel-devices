@@ -41,6 +41,11 @@ PKG_CHECK_MODULES(GCONF, gconf-2.0)
 
 SHAVE_INIT([.], [enable])
 
+AC_ARG_ENABLE([settings-capplet], [AS_HELP_STRING([--enable-settings-capplet],
+              [Build and install settings capplet])],
+              [], [enable_settings_capplet=no])
+AM_CONDITIONAL([WITH_SETTINGS_CAPPLET], [test x$enable_settings_capplet != xno])
+
 AC_OUTPUT([
         Makefile
         shave
