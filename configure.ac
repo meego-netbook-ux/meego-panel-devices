@@ -16,7 +16,7 @@ AM_GLIB_GNU_GETTEXT
 
 localedir='${prefix}/${DATADIRNAME}/locale'
 AC_SUBST(localedir)
-
+AS_AC_EXPAND(LIBEXECDIR, "$libexecdir")
 
 AC_PROG_CC
 AC_PROG_CC_STDC
@@ -59,6 +59,8 @@ AC_OUTPUT([
         dalston/Makefile
         tests/Makefile
         data/Makefile
+	data/dalston-power-applet.desktop.in
+	data/dalston-volume-applet.desktop.in
         data/icons/Makefile
         data/theme/Makefile
         src/Makefile
