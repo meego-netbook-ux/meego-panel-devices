@@ -82,5 +82,6 @@ AC_OUTPUT([
   libhal-glib/Makefile
   libhal-panel-glib/Makefile
   libhal-power-glib/Makefile
+  po/Makefile.in
   src/Makefile
 ])
