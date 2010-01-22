@@ -37,17 +37,18 @@ PKG_CHECK_MODULES(DEVICES,
                   gdk-x11-2.0
                   gio-2.0
                   gtk+-2.0
+                  libnotify
                   moblin-panel
                   mx-1.0)
 
-PKG_CHECK_MODULES(GLIB, glib-2.0 >= 2.14 gobject-2.0)
-PKG_CHECK_MODULES(DBUS_GLIB, dbus-glib-1)
-PKG_CHECK_MODULES(GTK, gtk+-2.0)
-PKG_CHECK_MODULES(PULSE, libpulse-mainloop-glib >= 0.9.10)
-PKG_CHECK_MODULES(CANBERRA, libcanberra-gtk)
-PKG_CHECK_MODULES(NBTK_GTK, nbtk-gtk-1.2)
-PKG_CHECK_MODULES(LIBNOTIFY, libnotify)
-PKG_CHECK_MODULES(GCONF, gconf-2.0)
+#PKG_CHECK_MODULES(GLIB, glib-2.0 >= 2.14 gobject-2.0)
+#PKG_CHECK_MODULES(DBUS_GLIB, dbus-glib-1)
+#PKG_CHECK_MODULES(GTK, gtk+-2.0)
+#PKG_CHECK_MODULES(PULSE, libpulse-mainloop-glib >= 0.9.10)
+#PKG_CHECK_MODULES(CANBERRA, libcanberra-gtk)
+#PKG_CHECK_MODULES(NBTK_GTK, nbtk-gtk-1.2)
+#PKG_CHECK_MODULES(LIBNOTIFY, libnotify)
+#PKG_CHECK_MODULES(GCONF, gconf-2.0)
 
 AC_ARG_ENABLE([cache],
               [AC_HELP_STRING([--enable-cache],
@@ -75,14 +76,18 @@ AM_CONDITIONAL([ENABLE_MOBLIN_DESKTOP_FILE], [test "x$enable_mdesktop" = "xyes"]
 AC_OUTPUT([
   Makefile
   build/Makefile
-  dalston/Makefile
   data/Makefile
   data/theme/Makefile
-  libegg-idletime/Makefile
-  libgvc/Makefile
-  libhal-glib/Makefile
-  libhal-panel-glib/Makefile
-  libhal-power-glib/Makefile
   po/Makefile.in
   src/Makefile
 ])
+
+#AC_OUTPUT([
+#  dalston/Makefile
+#  libegg-idletime/Makefile
+#  libgvc/Makefile
+#  libhal-glib/Makefile
+#  libhal-panel-glib/Makefile
+#  libhal-power-glib/Makefile
+#])
+

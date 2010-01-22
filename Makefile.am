@@ -1,7 +1,8 @@
 
 ACLOCAL_AMFLAGS = -I build
 
-SUBDIRS = build libhal-glib libhal-panel-glib libhal-power-glib libgvc libegg-idletime dalston src data po
+SUBDIRS = build src data po
+# SUBDIRS += libhal-glib libhal-panel-glib libhal-power-glib libgvc libegg-idletime dalston
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-moblin-desktop-file
 
