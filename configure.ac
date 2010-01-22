@@ -34,6 +34,7 @@ AC_SUBST(MOBLIN_PANELS_DIR)
 
 PKG_CHECK_MODULES(DEVICES,
                   clutter-1.0
+                  gdk-x11-2.0
                   gio-2.0
                   gtk+-2.0
                   moblin-panel
