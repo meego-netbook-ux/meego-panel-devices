@@ -32,7 +32,11 @@ PKG_CHECK_MODULES(MPL, moblin-panel >= 0.50.0)
 MOBLIN_PANELS_DIR=`$PKG_CONFIG --variable=moblin_panel_panels_dir moblin-panel`
 AC_SUBST(MOBLIN_PANELS_DIR)
 
+egg_console_kit_deps='dbus-glib-1'
+PKG_CHECK_MODULES(EGG_CONSOLE_KIT, $egg_console_kit_deps)
+
 PKG_CHECK_MODULES(DEVICES,
+                  $egg_console_kit_deps
                   clutter-1.0
                   gdk-x11-2.0
                   gio-2.0
@@ -78,6 +82,7 @@ AC_OUTPUT([
   build/Makefile
   data/Makefile
   data/theme/Makefile
+  egg-console-kit/Makefile
   po/Makefile.in
   src/Makefile
 ])
