@@ -38,6 +38,7 @@ PKG_CHECK_MODULES(EGG_CONSOLE_KIT, $egg_console_kit_deps)
 PKG_CHECK_MODULES(DEVICES,
                   $egg_console_kit_deps
                   clutter-1.0
+                  devkit-power-gobject
                   gdk-x11-2.0
                   gio-2.0
                   gtk+-2.0
