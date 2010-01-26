@@ -86,6 +86,7 @@ AC_OUTPUT([
   egg-console-kit/Makefile
   po/Makefile.in
   src/Makefile
+  tests/Makefile
 ])
 
 #AC_OUTPUT([
