@@ -82,6 +82,7 @@ AC_OUTPUT([
   Makefile
   build/Makefile
   data/Makefile
+  data/icons/Makefile
   data/theme/Makefile
   egg-console-kit/Makefile
   po/Makefile.in
