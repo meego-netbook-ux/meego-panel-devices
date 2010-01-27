@@ -1,3 +1,4 @@
+
 AC_PREREQ(2.53)
 AC_INIT(moblin-panel-devices, 0.1.0)
 AC_CONFIG_AUX_DIR([build])
@@ -23,19 +24,16 @@ AC_ISC_POSIX
 AC_HEADER_STDC
 AM_PROG_CC_C_O
 
+PKG_PROG_PKG_CONFIG
 AS_ALL_LINGUAS
-
-CFLAGS="$CFLAGS -Wall"
-
-PKG_CHECK_MODULES(MPL, moblin-panel >= 0.50.0)
 
 MOBLIN_PANELS_DIR=`$PKG_CONFIG --variable=moblin_panel_panels_dir moblin-panel`
 AC_SUBST(MOBLIN_PANELS_DIR)
 
 egg_console_kit_deps='dbus-glib-1'
-PKG_CHECK_MODULES(EGG_CONSOLE_KIT, $egg_console_kit_deps)
+PKG_CHECK_MODULES(ECK, $egg_console_kit_deps)
 
-PKG_CHECK_MODULES(DEVICES,
+PKG_CHECK_MODULES(MPD,
                   $egg_console_kit_deps
                   clutter-1.0
                   devkit-power-gobject
@@ -43,7 +41,7 @@ PKG_CHECK_MODULES(DEVICES,
                   gio-2.0
                   gtk+-2.0
                   libnotify
-                  moblin-panel
+                  moblin-panel >= 0.50.0
                   mx-1.0)
 
 #PKG_CHECK_MODULES(GLIB, glib-2.0 >= 2.14 gobject-2.0)
