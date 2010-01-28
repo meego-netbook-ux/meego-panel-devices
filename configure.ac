@@ -28,14 +28,69 @@ AM_PROG_CC_C_O
 PKG_PROG_PKG_CONFIG
 AS_ALL_LINGUAS
 
-MOBLIN_PANELS_DIR=`$PKG_CONFIG --variable=moblin_panel_panels_dir moblin-panel`
-AC_SUBST(MOBLIN_PANELS_DIR)
+#
+# Egg Console Kit
+#
 
-egg_console_kit_deps='dbus-glib-1'
-PKG_CHECK_MODULES(ECK, $egg_console_kit_deps)
+eck_deps='dbus-glib-1'
+PKG_CHECK_MODULES(ECK, $eck_deps)
+
+#
+# Gnome Disk Utility
+#
+
+gdu_deps="glib-2.0 >= 2.22 \
+ gobject-2.0 >= 2.16 \
+ gio-2.0 >= 2.22 \
+ gio-unix-2.0 >= 2.22 \
+ dbus-glib-1 >= 0.74 \
+ gnome-keyring-1 >= 2.22 \
+ udisks >= 1.0.0 \
+ udisks < 1.1.0"
+PKG_CHECK_MODULES(GDU, $gdu_deps)
+
+# Try to find udisks dbus interfaces.
+udisks_dbus_dir='dbus-1/interfaces'
+udisks_dbus_if='org.freedesktop.UDisks.xml'
+udisks_dbus_path="$udisks_dbus_dir/$udisks_dbus_if"
+UDISKS_DATADIR=
+
+AS_AC_EXPAND([UDISKS_DATADIR], $datadir)
+udisks_search_path="$UDISKS_DATADIR
+/usr/share"
+
+AC_ARG_WITH([udisks],
+            [AS_HELP_STRING([--with-udisks=PREFIX], [Use udisks in PREFIX])],
+[
+udisks_search_path="$withval/share
+$udisks_search_path"
+])
+
+UDISKS_DATADIR=
+for dir in $udisks_search_path; do
+  AC_MSG_CHECKING([for udisks dbus interface $dir/$udisks_dbus_path])
+  if test -f $dir/$udisks_dbus_path; then
+    AC_MSG_RESULT([yes])
+    UDISKS_DATADIR=$dir
+    break
+  else
+    AC_MSG_RESULT([no])
+  fi
+done
+
+if test "$UDISKS_DATADIR" == ""; then
+  AC_MSG_ERROR([Udisks dbus interfaces not found, use --with-udisks=PREFIX.])
+fi
+
+AC_SUBST([UDISKS_DATADIR])
+
+#
+# Moblin Panel Devices
+#
 
 PKG_CHECK_MODULES(MPD,
-                  $egg_console_kit_deps
+                  $eck_deps
+                  $gdu_deps
                   clutter-1.0
                   devkit-power-gobject
                   gdk-x11-2.0
@@ -53,6 +108,9 @@ PKG_CHECK_MODULES(MPD,
 #PKG_CHECK_MODULES(NBTK_GTK, nbtk-gtk-1.2)
 #PKG_CHECK_MODULES(LIBNOTIFY, libnotify)
 #PKG_CHECK_MODULES(GCONF, gconf-2.0)
+
+MOBLIN_PANELS_DIR=`$PKG_CONFIG --variable=moblin_panel_panels_dir moblin-panel`
+AC_SUBST(MOBLIN_PANELS_DIR)
 
 AC_ARG_ENABLE([cache],
               [AC_HELP_STRING([--enable-cache],
@@ -84,6 +142,7 @@ AC_OUTPUT([
   data/icons/Makefile
   data/theme/Makefile
   egg-console-kit/Makefile
+  gdu/Makefile
   po/Makefile.in
   src/Makefile
   tests/Makefile
