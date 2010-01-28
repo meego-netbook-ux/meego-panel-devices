@@ -55,9 +55,11 @@ udisks_dbus_if='org.freedesktop.UDisks.xml'
 udisks_dbus_path="$udisks_dbus_dir/$udisks_dbus_if"
 UDISKS_DATADIR=
 
+# '/opt/moblin/share' path is hardcoded so the maintainer can easily distcheck.
 AS_AC_EXPAND([UDISKS_DATADIR], $datadir)
 udisks_search_path="$UDISKS_DATADIR
-/usr/share"
+/usr/share
+/opt/moblin/share"
 
 AC_ARG_WITH([udisks],
             [AS_HELP_STRING([--with-udisks=PREFIX], [Use udisks in PREFIX])],
