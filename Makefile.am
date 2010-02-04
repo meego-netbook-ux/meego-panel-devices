@@ -1,7 +1,7 @@
 
 ACLOCAL_AMFLAGS = -I build
 
-SUBDIRS = build egg-console-kit gdu data po src tests
+SUBDIRS = build egg-console-kit gdu gvc data po src tests
 # SUBDIRS += libhal-glib libhal-panel-glib libhal-power-glib libgvc libegg-idletime dalston
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-moblin-desktop-file

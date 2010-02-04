@@ -87,12 +87,20 @@ fi
 AC_SUBST([UDISKS_DATADIR])
 
 #
+# Gnome Volume Control
+#
+
+gvc_deps='libpulse-mainloop-glib >= 0.9.15'
+PKG_CHECK_MODULES(GVC, $gvc_deps)
+
+#
 # Moblin Panel Devices
 #
 
 PKG_CHECK_MODULES(MPD,
                   $eck_deps
                   $gdu_deps
+                  $gvc_deps
                   clutter-1.0
                   devkit-power-gobject
                   gdk-x11-2.0
@@ -145,6 +153,7 @@ AC_OUTPUT([
   data/theme/Makefile
   egg-console-kit/Makefile
   gdu/Makefile
+  gvc/Makefile
   po/Makefile.in
   src/Makefile
   tests/Makefile
