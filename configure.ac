@@ -47,7 +47,6 @@ gdu_deps="glib-2.0 >= 2.22 \
  gnome-keyring-1 >= 2.22 \
  udisks >= 1.0.0 \
  udisks < 1.1.0"
-PKG_CHECK_MODULES(GDU, $gdu_deps)
 
 # Try to find udisks dbus interfaces.
 udisks_dbus_dir='dbus-1/interfaces'
@@ -62,13 +61,20 @@ udisks_search_path="$UDISKS_DATADIR
 /opt/moblin/share"
 
 AC_ARG_WITH([udisks],
-            [AS_HELP_STRING([--with-udisks=PREFIX], [Use udisks in PREFIX])],
-[
-udisks_search_path="$withval/share
-$udisks_search_path"
-])
+            [AS_HELP_STRING([--with-udisks=PREFIX], [Use udisks in PREFIX])])
 
 UDISKS_DATADIR=
+if test "$with_udisks" != "no"; then
+
+PKG_CHECK_MODULES(GDU, $gdu_deps)
+gdu_pkgs="$gdu_deps"
+
+if test "$with_udisks" != "yes" &&
+   test "$with_udisks" != ""; then
+udisks_search_path="$withval/share
+$udisks_search_path"
+fi
+
 for dir in $udisks_search_path; do
   AC_MSG_CHECKING([for udisks dbus interface $dir/$udisks_dbus_path])
   if test -f $dir/$udisks_dbus_path; then
@@ -81,10 +87,15 @@ for dir in $udisks_search_path; do
 done
 
 if test "$UDISKS_DATADIR" == ""; then
-  AC_MSG_ERROR([Udisks dbus interfaces not found, use --with-udisks=PREFIX.])
+  AC_MSG_ERROR([Udisks dbus interfaces not found, use --with-udisks=PREFIX or --without-udisks.])
 fi
 
+AC_DEFINE([HAVE_UDISKS], [1], [Udisks is available for volume monitoring])
+
+fi # with-udisks
+
 AC_SUBST([UDISKS_DATADIR])
+AM_CONDITIONAL([HAVE_UDISKS], [test "$with_udisks" != "no"])
 
 #
 # Gnome Volume Control
@@ -99,7 +110,7 @@ PKG_CHECK_MODULES(GVC, $gvc_deps)
 
 PKG_CHECK_MODULES(MPD,
                   $eck_deps
-                  $gdu_deps
+                  $gdu_pkgs
                   $gvc_deps
                   clutter-1.0
                   devkit-power-gobject
