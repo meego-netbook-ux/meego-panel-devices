@@ -39,7 +39,7 @@ PKG_CHECK_MODULES(ECK, $eck_deps)
 # Gnome Disk Utility
 #
 
-gdu_deps="glib-2.0 >= 2.22 \
+gdu_reqs="glib-2.0 >= 2.22 \
  gobject-2.0 >= 2.16 \
  gio-2.0 >= 2.22 \
  gio-unix-2.0 >= 2.22 \
@@ -66,8 +66,8 @@ AC_ARG_WITH([udisks],
 UDISKS_DATADIR=
 if test "$with_udisks" != "no"; then
 
-PKG_CHECK_MODULES(GDU, $gdu_deps)
-gdu_pkgs="$gdu_deps"
+PKG_CHECK_MODULES(GDU, $gdu_reqs)
+gdu_deps="$gdu_reqs"
 
 if test "$with_udisks" != "yes" &&
    test "$with_udisks" != ""; then
@@ -110,7 +110,7 @@ PKG_CHECK_MODULES(GVC, $gvc_deps)
 
 PKG_CHECK_MODULES(MPD,
                   $eck_deps
-                  $gdu_pkgs
+                  $gdu_deps
                   $gvc_deps
                   clutter-1.0
                   devkit-power-gobject
