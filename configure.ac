@@ -1,6 +1,6 @@
 
 AC_PREREQ(2.53)
-AC_INIT(moblin-panel-devices, 0.1.1)
+AC_INIT(moblin-panel-devices, 0.1.2)
 AC_CONFIG_AUX_DIR([build])
 AC_CONFIG_MACRO_DIR([build])
 AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
