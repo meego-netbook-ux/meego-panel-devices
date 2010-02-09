@@ -36,6 +36,13 @@ eck_deps='dbus-glib-1'
 PKG_CHECK_MODULES(ECK, $eck_deps)
 
 #
+# Egg Idle Time
+#
+
+eit_deps='gdk-x11-2.0'
+PKG_CHECK_MODULES(EIT, $eit_deps)
+
+#
 # Gnome Disk Utility
 #
 
@@ -110,6 +117,7 @@ PKG_CHECK_MODULES(GVC, $gvc_deps)
 
 PKG_CHECK_MODULES(MPD,
                   $eck_deps
+                  $eit_deps
                   $gdu_deps
                   $gvc_deps
                   clutter-1.0
@@ -163,6 +171,7 @@ AC_OUTPUT([
   data/icons/Makefile
   data/theme/Makefile
   egg-console-kit/Makefile
+  egg-idletime/Makefile
   gdu/Makefile
   gvc/Makefile
   po/Makefile.in

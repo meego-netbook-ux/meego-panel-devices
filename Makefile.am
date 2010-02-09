@@ -5,7 +5,7 @@ if HAVE_UDISKS
 gdu_subdir = gdu
 endif
 
-SUBDIRS = build egg-console-kit $(gdu_subdir) gvc data po src tests
+SUBDIRS = build egg-console-kit egg-idletime $(gdu_subdir) gvc data po src tests
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-moblin-desktop-file
 
