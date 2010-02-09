@@ -122,6 +122,7 @@ PKG_CHECK_MODULES(MPD,
                   $gvc_deps
                   clutter-1.0
                   devkit-power-gobject
+                  gconf-2.0
                   gdk-x11-2.0
                   gio-2.0
                   gtk+-2.0
