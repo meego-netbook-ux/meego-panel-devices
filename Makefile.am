@@ -5,17 +5,27 @@ if HAVE_UDISKS
 gdu_subdir = gdu
 endif
 
-SUBDIRS = build egg-console-kit egg-idletime $(gdu_subdir) gvc data po src tests
+SUBDIRS = \
+	$(gdu_subdir) \
+	build \
+	egg-console-kit \
+	egg-idletime \
+	gvc \
+	data \
+	po \
+	src \
+	tests \
+	$(NULL)
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-moblin-desktop-file
 
 EXTRA_DIST = \
 	AUTHORS \
 	autogen.sh \
-	ChangeLog \
 	COPYING \
 	NEWS \
-	README
+	README \
+	$(NULL)
 
 # Line-by-line description of the dist-local target:
 # + Extract tagged commits between $(VERSION) and the previous one ($v).
@@ -31,9 +41,4 @@ dist-local:
 	test -f NEWS.new && cat NEWS.new > NEWS; \
 	test -f NEWS.old && cat NEWS.old >> NEWS; \
 	rm -f NEWS.old NEWS.new
-
-# Only need to re-create changelog after version bump.
-ChangeLog: configure.ac
-	@echo Creating ChangeLog ...
-	$(top_srcdir)/build/gen-changelog.pl > $@
 
