@@ -34,11 +34,13 @@ EXTRA_DIST = \
 # + Write a new NEWS file with the new info.
 # + Append old NEWS.
 # + Delete tmp files.
-dist-local:
+NEWS: configure.ac
 	v=`$(top_srcdir)/build/git-log-extract-news.sh $(VERSION) 2>&1 > NEWS.new` && \
 	echo "Previous version is $$v" && \
 	test -s NEWS && grep -A 1000000 '^$$v' NEWS > NEWS.old; \
 	test -f NEWS.new && cat NEWS.new > NEWS; \
 	test -f NEWS.old && cat NEWS.old >> NEWS; \
 	rm -f NEWS.old NEWS.new
+
+.PHONY: NEWS
 

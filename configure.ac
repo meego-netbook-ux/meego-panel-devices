@@ -171,12 +171,3 @@ AC_OUTPUT([
   tests/Makefile
 ])
 
-#AC_OUTPUT([
-#  dalston/Makefile
-#  libegg-idletime/Makefile
-#  libgvc/Makefile
-#  libhal-glib/Makefile
-#  libhal-panel-glib/Makefile
-#  libhal-power-glib/Makefile
-#])
-
