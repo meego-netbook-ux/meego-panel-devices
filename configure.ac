@@ -169,5 +169,7 @@ AC_OUTPUT([
   po/Makefile.in
   src/Makefile
   tests/Makefile
+  moblin-power-icon/Makefile
+  moblin-power-icon/src/Makefile
 ])
 

@@ -15,6 +15,7 @@ SUBDIRS = \
 	po \
 	src \
 	tests \
+	moblin-power-icon \
 	$(NULL)
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-moblin-desktop-file
