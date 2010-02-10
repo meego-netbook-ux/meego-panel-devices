@@ -28,14 +28,16 @@ EXTRA_DIST = \
 	README \
 	$(NULL)
 
-# Line-by-line description of the dist-local target:
+# Line-by-line description of the target:
+# + Only run from source tree, not when distchecking.
 # + Extract tagged commits between $(VERSION) and the previous one ($v).
 # + Write out previous version.
 # + Extract NEWS from $v and older to NEWS.old
 # + Write a new NEWS file with the new info.
 # + Append old NEWS.
 # + Delete tmp files.
-NEWS: configure.ac
+NEWS: $(srcdir)/configure.ac
+	test -f NEWS && \
 	v=`$(top_srcdir)/build/git-log-extract-news.sh $(VERSION) 2>&1 > NEWS.new` && \
 	echo "Previous version is $$v" && \
 	test -s NEWS && grep -A 1000000 '^$$v' NEWS > NEWS.old; \

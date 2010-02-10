@@ -17,6 +17,9 @@ AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE],
                    [Gettext domain name])
 AM_GLIB_GNU_GETTEXT
 
+# For substitution in the desktop files.
+AS_AC_EXPAND(LIBEXECDIR, "$libexecdir")
+
 AC_PROG_CC
 AC_PROG_CC_STDC
 AC_PROG_INSTALL
@@ -170,6 +173,8 @@ AC_OUTPUT([
   src/Makefile
   tests/Makefile
   moblin-power-icon/Makefile
+  moblin-power-icon/data/Makefile
+  moblin-power-icon/data/moblin-power-icon.desktop.in
   moblin-power-icon/src/Makefile
 ])
 
