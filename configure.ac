@@ -17,6 +17,9 @@ AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE],
                    [Gettext domain name])
 AM_GLIB_GNU_GETTEXT
 
+localedir='${prefix}/${DATADIRNAME}/locale'
+AC_SUBST([localedir])
+
 # For substitution in the desktop files.
 AS_AC_EXPAND(LIBEXECDIR, "$libexecdir")
 
