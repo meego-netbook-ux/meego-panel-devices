@@ -20,8 +20,9 @@ AM_GLIB_GNU_GETTEXT
 localedir='${prefix}/${DATADIRNAME}/locale'
 AC_SUBST([localedir])
 
-# For substitution in the desktop files.
+# For absolute paths in desktop files etc.
 AS_AC_EXPAND(LIBEXECDIR, "$libexecdir")
+AS_AC_EXPAND(PKGTHEMEDIR, "$datadir/$PACKAGE/theme")
 
 AC_PROG_CC
 AC_PROG_CC_STDC
@@ -155,24 +156,26 @@ AS_IF([test "x$enable_cache" = "xyes"],
 AM_CONDITIONAL([ENABLE_CACHE],   [test "x$enable_cache" = "xyes"])
 
 AC_OUTPUT([
-  Makefile
   build/Makefile
+  data/icons/Makefile
   data/Makefile
   data/moblin-panel-devices.desktop.in
   data/org.moblin.UX.Shell.Panels.devices.service
-  data/icons/Makefile
   data/theme/Makefile
   egg-console-kit/Makefile
   egg-idletime/Makefile
   gdu/Makefile
   gvc/Makefile
-  po/Makefile.in
-  src/Makefile
-  tests/Makefile
-  moblin-power-icon/Makefile
+  Makefile
   moblin-power-icon/data/Makefile
   moblin-power-icon/data/moblin-power-icon.desktop.in
   moblin-power-icon/data/org.moblin.UX.Shell.Panels.power.service
+  moblin-power-icon/data/theme/Makefile
+  moblin-power-icon/data/theme/toolbar-button.css
+  moblin-power-icon/Makefile
   moblin-power-icon/src/Makefile
+  po/Makefile.in
+  src/Makefile
+  tests/Makefile
 ])
 
