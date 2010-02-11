@@ -163,6 +163,8 @@ AC_OUTPUT([
   Makefile
   build/Makefile
   data/Makefile
+  data/moblin-panel-devices.desktop.in
+  data/org.moblin.UX.Shell.Panels.devices.service
   data/icons/Makefile
   data/theme/Makefile
   egg-console-kit/Makefile
@@ -175,6 +177,7 @@ AC_OUTPUT([
   moblin-power-icon/Makefile
   moblin-power-icon/data/Makefile
   moblin-power-icon/data/moblin-power-icon.desktop.in
+  moblin-power-icon/data/org.moblin.UX.Shell.Panels.power.service
   moblin-power-icon/src/Makefile
 ])
 
