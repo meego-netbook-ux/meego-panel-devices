@@ -35,7 +35,7 @@ EXTRA_DIST = \
 # + Append old NEWS.
 # + Delete tmp files.
 NEWS: $(srcdir)/configure.ac
-	test -f NEWS && \
+	test -d .git && \
 	v=`$(top_srcdir)/build/git-log-extract-news.sh $(VERSION) 2>&1 > NEWS.new` && \
 	echo "Previous version is $$v" && \
 	test -s NEWS && grep -A 1000000 '^$$v' NEWS > NEWS.old; \
