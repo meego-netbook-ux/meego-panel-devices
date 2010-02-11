@@ -171,7 +171,7 @@ AC_OUTPUT([
   moblin-power-icon/data/moblin-power-icon.desktop.in
   moblin-power-icon/data/org.moblin.UX.Shell.Panels.power.service
   moblin-power-icon/data/theme/Makefile
-  moblin-power-icon/data/theme/toolbar-button.css
+  moblin-power-icon/data/theme/power-icon.css
   moblin-power-icon/Makefile
   moblin-power-icon/src/Makefile
   po/Makefile.in
