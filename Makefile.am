@@ -18,8 +18,6 @@ SUBDIRS = \
 	moblin-power-icon \
 	$(NULL)
 
-DISTCHECK_CONFIGURE_FLAGS = --disable-moblin-desktop-file
-
 EXTRA_DIST = \
 	AUTHORS \
 	autogen.sh \
