@@ -128,11 +128,11 @@ PKG_CHECK_MODULES(MPD,
                   $gdu_deps
                   $gvc_deps
                   clutter-1.0
+                  clutter-gtk-0.10
                   devkit-power-gobject
                   gconf-2.0
                   gdk-x11-2.0
                   gio-2.0
-                  gtk+-2.0
                   libnotify
                   moblin-panel >= 0.66.5
                   mx-1.0)
@@ -175,6 +175,7 @@ AC_OUTPUT([
   power-icon/data/theme/power-icon.css
   power-icon/Makefile
   power-icon/src/Makefile
+  power-icon/tests/Makefile
   src/Makefile
   tests/Makefile
 ])
