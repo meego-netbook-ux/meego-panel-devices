@@ -13,9 +13,9 @@ SUBDIRS = \
 	gvc \
 	data \
 	po \
+	power-icon \
 	src \
 	tests \
-	moblin-power-icon \
 	$(NULL)
 
 EXTRA_DIST = \
@@ -28,6 +28,4 @@ EXTRA_DIST = \
 
 extract-news:
 	$(top_srcdir)/build/git-log-extract-news.sh $(VERSION) 2>/dev/null
-
-.PHONY: extract-news
 

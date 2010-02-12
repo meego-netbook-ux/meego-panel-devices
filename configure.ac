@@ -167,14 +167,14 @@ AC_OUTPUT([
   gdu/Makefile
   gvc/Makefile
   Makefile
-  moblin-power-icon/data/Makefile
-  moblin-power-icon/data/moblin-power-icon.desktop.in
-  moblin-power-icon/data/org.moblin.UX.Shell.Panels.power.service
-  moblin-power-icon/data/theme/Makefile
-  moblin-power-icon/data/theme/power-icon.css
-  moblin-power-icon/Makefile
-  moblin-power-icon/src/Makefile
   po/Makefile.in
+  power-icon/data/Makefile
+  power-icon/data/moblin-power-icon.desktop.in
+  power-icon/data/org.moblin.UX.Shell.Panels.power.service
+  power-icon/data/theme/Makefile
+  power-icon/data/theme/power-icon.css
+  power-icon/Makefile
+  power-icon/src/Makefile
   src/Makefile
   tests/Makefile
 ])
