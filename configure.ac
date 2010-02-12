@@ -134,7 +134,7 @@ PKG_CHECK_MODULES(MPD,
                   gio-2.0
                   gtk+-2.0
                   libnotify
-                  moblin-panel >= 0.50.0
+                  moblin-panel >= 0.66.5
                   mx-1.0)
 
 MOBLIN_PANELS_DIR=`$PKG_CONFIG --variable=moblin_panel_panels_dir moblin-panel`
