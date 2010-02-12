@@ -36,20 +36,6 @@ PKG_PROG_PKG_CONFIG
 AS_ALL_LINGUAS
 
 #
-# Egg Console Kit
-#
-
-eck_deps='dbus-glib-1'
-PKG_CHECK_MODULES(ECK, $eck_deps)
-
-#
-# Egg Idle Time
-#
-
-eit_deps='gdk-x11-2.0'
-PKG_CHECK_MODULES(EIT, $eit_deps)
-
-#
 # Gnome Disk Utility
 #
 
@@ -123,22 +109,13 @@ PKG_CHECK_MODULES(GVC, $gvc_deps)
 #
 
 PKG_CHECK_MODULES(MPD,
-                  $eck_deps
-                  $eit_deps
                   $gdu_deps
                   $gvc_deps
                   clutter-1.0
                   clutter-gtk-0.10
                   devkit-power-gobject
-                  gconf-2.0
-                  gdk-x11-2.0
-                  gio-2.0
-                  libnotify
                   moblin-panel >= 0.66.5
                   mx-1.0)
-
-MOBLIN_PANELS_DIR=`$PKG_CONFIG --variable=moblin_panel_panels_dir moblin-panel`
-AC_SUBST(MOBLIN_PANELS_DIR)
 
 AC_ARG_ENABLE([cache],
               [AC_HELP_STRING([--enable-cache],
@@ -154,6 +131,43 @@ AS_IF([test "x$enable_cache" = "xyes"],
 ])
 
 AM_CONDITIONAL([ENABLE_CACHE],   [test "x$enable_cache" = "xyes"])
+
+#
+# Egg Console Kit
+#
+
+eck_deps='dbus-glib-1'
+PKG_CHECK_MODULES(ECK, $eck_deps)
+
+#
+# Egg Idle Time
+#
+
+eit_deps='gdk-x11-2.0'
+PKG_CHECK_MODULES(EIT, $eit_deps)
+
+#
+# Moblin Power Icon
+#
+
+PKG_CHECK_MODULES(MPI,
+                  $eck_deps
+                  $eit_deps
+                  clutter-1.0
+                  clutter-gtk-0.10
+                  devkit-power-gobject
+                  gconf-2.0
+                  gdk-x11-2.0
+                  libnotify
+                  moblin-panel >= 0.66.5
+                  mx-1.0)
+
+#
+# Common stuff
+#
+
+MOBLIN_PANELS_DIR=`$PKG_CONFIG --variable=moblin_panel_panels_dir moblin-panel`
+AC_SUBST(MOBLIN_PANELS_DIR)
 
 AC_OUTPUT([
   build/Makefile
