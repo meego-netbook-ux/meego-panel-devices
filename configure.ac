@@ -32,6 +32,29 @@ AM_PROG_CC_C_O
 PKG_PROG_PKG_CONFIG
 AS_ALL_LINGUAS
 
+headers="
+errno.h \
+execinfo.h \
+fcntl.h \
+locale.h \
+signal.h \
+stdarg.h \
+stdbool.h \
+stdint.h \
+stdio.h \
+stdlib.h \
+string.h \
+sys/ioctl.h \
+sys/stat.h \
+sys/statvfs.h \
+sys/types.h \
+time.h \
+unistd.h"
+AC_CHECK_HEADERS($headers, [],
+[
+  AC_MSG_ERROR([missing required header])
+])
+
 #
 # Gnome Disk Utility
 #
