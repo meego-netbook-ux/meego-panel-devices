@@ -5,3 +5,5 @@ EXTRA_DIST = \
   git-log-extract-news.sh \
   $(NULL)
 
+
+-include $(top_srcdir)/git.mk
