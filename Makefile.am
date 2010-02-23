@@ -26,8 +26,12 @@ EXTRA_DIST = \
   README \
   $(NULL)
 
+GITIGNOREFILES = \
+  aclocal.m4 \
+  config.h.in \
+  $(NULL)
+
 extract-news:
 	$(top_srcdir)/build/git-log-extract-news.sh $(VERSION) 2>/dev/null
-
 
 -include $(top_srcdir)/git.mk
