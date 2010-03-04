@@ -125,8 +125,9 @@ PKG_CHECK_MODULES(MPD,
                   $gvc_deps
                   clutter-1.0
                   clutter-gtk-0.10
-                  gio-2.0
                   devkit-power-gobject
+                  gio-2.0
+                  libcanberra-gtk
                   moblin-panel >= 0.66.5
                   mx-1.0)
 
