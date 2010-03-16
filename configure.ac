@@ -70,7 +70,7 @@ UDISKS_DATADIR=
 AS_AC_EXPAND([UDISKS_DATADIR], $datadir)
 udisks_search_path="$UDISKS_DATADIR
 /usr/share
-/opt/moblin/share"
+~/Devel/moblin2-jhbuild-prefix/share"
 
 AC_ARG_WITH([udisks],
             [AS_HELP_STRING([--with-udisks=PREFIX], [Use udisks in PREFIX])])
