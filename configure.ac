@@ -70,7 +70,7 @@ UDISKS_DATADIR=
 AS_AC_EXPAND([UDISKS_DATADIR], $datadir)
 udisks_search_path="$UDISKS_DATADIR
 /usr/share
-~/Devel/moblin2-jhbuild-prefix/share"
+/home/robsta/Devel/moblin2-jhbuild-prefix/share"
 
 AC_ARG_WITH([udisks],
             [AS_HELP_STRING([--with-udisks=PREFIX], [Use udisks in PREFIX])])
@@ -129,7 +129,7 @@ PKG_CHECK_MODULES(MPD,
                   gio-2.0
                   libcanberra-gtk
                   moblin-panel >= 0.66.5
-                  mx-1.0)
+                  mx-1.0 >= 0.8.0)
 
 AC_ARG_ENABLE([cache],
               [AC_HELP_STRING([--enable-cache],
