@@ -129,7 +129,7 @@ PKG_CHECK_MODULES(MPD,
                   gio-2.0
                   libcanberra-gtk
                   moblin-panel >= 0.66.5
-                  mx-1.0 >= 0.8.0)
+                  mx-1.0 >= 0.9.0)
 
 AC_ARG_ENABLE([cache],
               [AC_HELP_STRING([--enable-cache],
