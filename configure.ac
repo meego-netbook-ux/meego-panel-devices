@@ -141,7 +141,6 @@ AC_OUTPUT([
   data/theme/Makefile
   egg-console-kit/Makefile
   egg-idletime/Makefile
-  gdu/Makefile
   gvc/Makefile
   Makefile
   po/Makefile.in
