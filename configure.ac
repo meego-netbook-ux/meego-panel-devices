@@ -55,59 +55,7 @@ gdu_reqs="glib-2.0 >= 2.22 \
  gobject-2.0 >= 2.16 \
  gio-2.0 >= 2.22 \
  gio-unix-2.0 >= 2.22 \
- dbus-glib-1 >= 0.74 \
- gnome-keyring-1 >= 2.22 \
- udisks >= 1.0.0 \
- udisks < 1.1.0"
-
-# Try to find udisks dbus interfaces.
-udisks_dbus_dir='dbus-1/interfaces'
-udisks_dbus_if='org.freedesktop.UDisks.xml'
-udisks_dbus_path="$udisks_dbus_dir/$udisks_dbus_if"
-UDISKS_DATADIR=
-
-# '/opt/moblin/share' path is hardcoded so the maintainer can easily distcheck.
-AS_AC_EXPAND([UDISKS_DATADIR], $datadir)
-udisks_search_path="$UDISKS_DATADIR
-/usr/share
-/home/robsta/Devel/moblin2-jhbuild-prefix/share"
-
-AC_ARG_WITH([udisks],
-            [AS_HELP_STRING([--with-udisks=PREFIX], [Use udisks in PREFIX])])
-
-UDISKS_DATADIR=
-if test "$with_udisks" != "no"; then
-
-PKG_CHECK_MODULES(GDU, $gdu_reqs)
-gdu_deps="$gdu_reqs"
-
-if test "$with_udisks" != "yes" &&
-   test "$with_udisks" != ""; then
-udisks_search_path="$withval/share
-$udisks_search_path"
-fi
-
-for dir in $udisks_search_path; do
-  AC_MSG_CHECKING([for udisks dbus interface $dir/$udisks_dbus_path])
-  if test -f $dir/$udisks_dbus_path; then
-    AC_MSG_RESULT([yes])
-    UDISKS_DATADIR=$dir
-    break
-  else
-    AC_MSG_RESULT([no])
-  fi
-done
-
-if test "$UDISKS_DATADIR" == ""; then
-  AC_MSG_ERROR([Udisks dbus interfaces not found, use --with-udisks=PREFIX or --without-udisks.])
-fi
-
-AC_DEFINE([HAVE_UDISKS], [1], [Udisks is available for volume monitoring])
-
-fi # with-udisks
-
-AC_SUBST([UDISKS_DATADIR])
-AM_CONDITIONAL([HAVE_UDISKS], [test "$with_udisks" != "no"])
+ dbus-glib-1 >= 0.74"
 
 #
 # Gnome Volume Control
