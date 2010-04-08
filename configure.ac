@@ -74,6 +74,7 @@ PKG_CHECK_MODULES(MPD,
                   clutter-1.0
                   clutter-gtk-0.10
                   devkit-power-gobject
+                  gconf-2.0
                   gio-2.0
                   libcanberra-gtk
                   libnotify
