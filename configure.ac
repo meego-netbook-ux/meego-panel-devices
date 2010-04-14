@@ -75,7 +75,7 @@ PKG_CHECK_MODULES(MPD,
                   gio-2.0
                   libcanberra-gtk
                   libnotify
-                  moblin-panel >= 0.66.5
+                  moblin-panel >= 0.75.1
                   mx-1.0 >= 0.99.0)
 
 AC_ARG_ENABLE([cache],
