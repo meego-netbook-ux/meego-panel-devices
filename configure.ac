@@ -48,14 +48,11 @@ AC_CHECK_HEADERS($headers, [],
 ])
 
 #
-# Gnome Disk Utility
+# Gnome Power Manager
 #
 
-gdu_reqs="glib-2.0 >= 2.22 \
- gobject-2.0 >= 2.16 \
- gio-2.0 >= 2.22 \
- gio-unix-2.0 >= 2.22 \
- dbus-glib-1 >= 0.74"
+gpm_deps='gdk-x11-2.0 glib-2.0 gobject-2.0 xrandr'
+PKG_CHECK_MODULES(GPM, $gpm_deps)
 
 #
 # Gnome Volume Control
@@ -69,7 +66,7 @@ PKG_CHECK_MODULES(GVC, $gvc_deps)
 #
 
 PKG_CHECK_MODULES(MPD,
-                  $gdu_deps
+                  $gpm_deps
                   $gvc_deps
                   clutter-1.0
                   clutter-gtk-0.10
@@ -142,6 +139,7 @@ AC_OUTPUT([
   data/theme/Makefile
   egg-console-kit/Makefile
   egg-idletime/Makefile
+  gpm/Makefile
   gvc/Makefile
   Makefile
   po/Makefile.in

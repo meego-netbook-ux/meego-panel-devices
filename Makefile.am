@@ -5,6 +5,7 @@ SUBDIRS = \
   build \
   egg-console-kit \
   egg-idletime \
+  gpm \
   gvc \
   data \
   po \
