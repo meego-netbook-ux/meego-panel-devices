@@ -4,7 +4,6 @@ ACLOCAL_AMFLAGS = -I build
 SUBDIRS = \
   build \
   egg-console-kit \
-  egg-idletime \
   gpm \
   gvc \
   data \

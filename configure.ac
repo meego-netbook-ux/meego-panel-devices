@@ -101,19 +101,11 @@ eck_deps='dbus-glib-1'
 PKG_CHECK_MODULES(ECK, $eck_deps)
 
 #
-# Egg Idle Time
-#
-
-eit_deps='gdk-x11-2.0'
-PKG_CHECK_MODULES(EIT, $eit_deps)
-
-#
 # Moblin Power Icon
 #
 
 PKG_CHECK_MODULES(MPI,
                   $eck_deps
-                  $eit_deps
                   clutter-1.0
                   clutter-gtk-0.10
                   devkit-power-gobject
@@ -138,7 +130,6 @@ AC_OUTPUT([
   data/org.moblin.UX.Shell.Panels.devices.service
   data/theme/Makefile
   egg-console-kit/Makefile
-  egg-idletime/Makefile
   gpm/Makefile
   gvc/Makefile
   Makefile
