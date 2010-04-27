@@ -1,4 +1,11 @@
 
+Version 0.1.23, 2010-04-27
+
+- Fixes: http://bugs.meego.com/show_bug.cgi?id=902
+- Fixes: http://bugs.meego.com/show_bug.cgi?id=1062
+- Fixes: http://bugs.meego.com/show_bug.cgi?id=1174
+- l10n: Updates to en_GB, wa
+
 Version 0.1.22, 2010-04-23
 
 - Fixes: http://bugs.meego.com/show_bug.cgi?id=878
