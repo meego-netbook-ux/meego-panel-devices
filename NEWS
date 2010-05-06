@@ -1,13 +1,17 @@
 
+Version 0.1.25, 2010-05-06
+
+- l10n: Updates to ko, ja, fi, pl, es, pt_BR, sv, it
+
 Version 0.1.24, 2010-05-05
 
-    Fixes: http://bugs.meego.com/show_bug.cgi?id=1571
-    Fixes: http://bugs.meego.com/show_bug.cgi?id=1448
-    Fixes: http://bugs.meego.com/show_bug.cgi?id=1142
-    Fixes: http://bugs.meego.com/show_bug.cgi?id=1552
-    Fixes: http://bugs.meego.com/show_bug.cgi?id=1286
-    l10n: Updates to in, zh_TW, de, es, en_GB, ru, fi, it, zh_CN, sv,
-          nl, ja, pt_BR, pl, ko, fr
+- Fixes: http://bugs.meego.com/show_bug.cgi?id=1571
+- Fixes: http://bugs.meego.com/show_bug.cgi?id=1448
+- Fixes: http://bugs.meego.com/show_bug.cgi?id=1142
+- Fixes: http://bugs.meego.com/show_bug.cgi?id=1552
+- Fixes: http://bugs.meego.com/show_bug.cgi?id=1286
+- l10n: Updates to in, zh_TW, de, es, en_GB, ru, fi, it, zh_CN, sv,
+                   nl, ja, pt_BR, pl, ko, fr
 
 Version 0.1.23, 2010-04-27
 
