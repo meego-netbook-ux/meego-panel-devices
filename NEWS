@@ -1,4 +1,9 @@
 
+Version 0.1.25, 2010-05-07
+
+- Fixes: http://bugs.meego.com/show_bug.cgi?id=1242
+- l10n: Updates to nl, zh_CN
+
 Version 0.1.25, 2010-05-06
 
 - l10n: Updates to ko, ja, fi, pl, es, pt_BR, sv, it
