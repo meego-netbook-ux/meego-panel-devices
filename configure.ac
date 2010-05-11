@@ -1,6 +1,6 @@
 
 AC_PREREQ(2.53)
-AC_INIT([moblin-panel-devices], [0.1.27], [http://bugzilla.moblin.org])
+AC_INIT([moblin-panel-devices], [0.1.28], [http://bugzilla.moblin.org])
 AC_CONFIG_AUX_DIR([build])
 AC_CONFIG_MACRO_DIR([build])
 AM_INIT_AUTOMAKE([1.10 foreign -Wno-portability no-define])
