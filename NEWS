@@ -1,9 +1,14 @@
 
-Version 0.1.26, 2010-05-10
+Version 0.1.28, 2010-05-11
+
+- Fixes: http://bugs.meego.com/show_bug.cgi?id=1286
+- l10n: Updates to ja, fr, ru, it, es, de, sv, pt_BR, ko, pl, zh_TW
+
+Version 0.1.27, 2010-05-10
 
 - l10n: Updates to wa (tracked by BMC#1681)
 
-Version 0.1.25, 2010-05-07
+Version 0.1.26, 2010-05-07
 
 - Fixes: http://bugs.meego.com/show_bug.cgi?id=1242
 - l10n: Updates to nl, zh_CN
