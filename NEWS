@@ -1,4 +1,8 @@
 
+Version 0.1.29, 2010-05-18
+
+- l10n: Updates to ast, zh_CN, de, fr, ru, es (tracked by BMC#1681)
+
 Version 0.1.29, 2010-05-12
 
 - Fixes: http://bugs.meego.com/show_bug.cgi?id=1953
