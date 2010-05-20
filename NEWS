@@ -1,5 +1,9 @@
 
-Version 0.1.29, 2010-05-18
+Version 0.1.31, 2010-05-20
+
+- l10n: Updates to ja, tr, fi (tracked by BMC#1681)
+
+Version 0.1.30, 2010-05-18
 
 - l10n: Updates to ast, zh_CN, de, fr, ru, es (tracked by BMC#1681)
 
