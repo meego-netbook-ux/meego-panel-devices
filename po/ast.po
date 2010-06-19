@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-15 09:49+0000\n"
-"PO-Revision-Date: 2010-05-15 17:39+0100\n"
+"POT-Creation-Date: 2010-06-19 09:25+0000\n"
+"PO-Revision-Date: 2010-06-19 22:31+0100\n"
 "Last-Translator: astur <malditoastur@gmail.com>\n"
 "Language-Team: asturian <alministradores@softastur.org>\n"
 "MIME-Version: 1.0\n"
@@ -64,31 +64,31 @@ msgid "Running low on battery"
 msgstr "Queda poca batería "
 
 #: ../power-icon/src/mpd-power-icon.c:77
-msgid "We've noticed that your battery is running a bit low. If you can it would be a good idea to plug in and top up."
-msgstr "La batería ta daqué baxa. Si puedes, enchúfala pa recargala."
+msgid "I've noticed that your battery is running a bit low. If you can, it would be a good idea to plug in and top up."
+msgstr "La batería ta daqué baxa. Si puedes, ye bona idega enchufala pa recargala."
 
 #: ../power-icon/src/mpd-power-icon.c:80
 msgid "Getting close to empty"
 msgstr "Casi escosada"
 
 #: ../power-icon/src/mpd-power-icon.c:81
-msgid "You're running quite low on battery. It'd be a good idea to save all your work and plug in as soon as you can"
-msgstr "Cásique nun queda batería. Guarda'l trabayu ya enchúfala en cuantes puedas."
+msgid "You're running quite low on battery. It'd be a good idea to save all your work and plug in as soon as you can."
+msgstr "Ta escosándose la batería. Ye bona idega guardar el trabayu, ya enchufar la batería tan aína como puedas."
 
 #: ../power-icon/src/mpd-power-icon.c:85
 msgid "Danger!"
 msgstr "¡Peligru!"
 
 #: ../power-icon/src/mpd-power-icon.c:86
-msgid "Sorry, your computer is about to run out of battery. We're going to have to turn off now. Please save your work and hope to see you again soon."
-msgstr "L'equipu va escosar la batería nun intrín, y va apagase. Guarda's trabayu. Esperamos vete aína."
+msgid "Sorry, your computer is about to run out of battery. I'm going to have to turn off now. Please save your work and hope to see you again soon."
+msgstr "L'equipu va escosar la batería nun intrín. L'equipu va apagase. Por favor guarda'l trabayu, y esperamos vete aína."
 
 #: ../power-icon/src/mpd-power-icon.c:336
 msgid "Would you like to turn off now?"
 msgstr "¿Apagar l'equipu?"
 
 #: ../power-icon/src/mpd-power-icon.c:337
-msgid "If you don't decide I'll turn off in 30 seconds."
+msgid "If you don't decide, I'll turn off in 30 seconds."
 msgstr "Si nun se decide un res, va apagase en 30 segundos."
 
 #: ../power-icon/src/mpd-power-icon.c:441
@@ -97,7 +97,7 @@ msgstr "batería"
 
 #: ../power-icon/src/mpd-shutdown-notification.c:71
 #, c-format
-msgid "If you don't decide I'll turn off in %d seconds"
+msgid "If you don't decide, I'll turn off in %d seconds"
 msgstr "Si nun se decide un res, va apagase en %d segundos."
 
 #: ../power-icon/src/mpd-shutdown-notification.c:127
@@ -108,27 +108,27 @@ msgstr "Apagar"
 msgid "MeeGo Devices Panel"
 msgstr "Panel de preseos de MeeGo"
 
-#: ../src/mpd-battery-device.c:329
+#: ../src/mpd-battery-device.c:371
 #, c-format
 msgid "Sorry, you don't appear to have a battery installed."
 msgstr "Sentímoslo, paez que nun hai denguna batería instalada."
 
-#: ../src/mpd-battery-device.c:333
+#: ../src/mpd-battery-device.c:375
 #, c-format
 msgid "Your battery is charging. It is about %d%% full."
 msgstr "La batería ta cargándose. Ta a un %d%% de la capacidá."
 
-#: ../src/mpd-battery-device.c:338
+#: ../src/mpd-battery-device.c:380
 #, c-format
 msgid "Your battery is being used. It is about %d%% full."
 msgstr "Batería n'usu. Ta a un %d%% del total."
 
-#: ../src/mpd-battery-device.c:343
+#: ../src/mpd-battery-device.c:385
 #, c-format
 msgid "Your battery is fully charged and you're ready to go."
 msgstr "La batería ta dafechu cargada y llista."
 
-#: ../src/mpd-battery-device.c:347
+#: ../src/mpd-battery-device.c:389
 #, c-format
 msgid "Sorry, it looks like your battery is broken."
 msgstr "Sentímoslo, paez que la batería ta toyida."
@@ -164,7 +164,7 @@ msgstr "Otros preseos"
 msgid "Ejecting failed, looks like an application is using it"
 msgstr "Nun s'espulsó, porque paez qu'hai otra aplicación usándolu"
 
-#: ../src/mpd-devices-tile.c:414
+#: ../src/mpd-devices-tile.c:417
 msgid "It is safe to unplug this device now"
 msgstr "Yá puedes desconeutar el preséu ensin problemes"
 
@@ -181,37 +181,37 @@ msgstr "Papelera"
 msgid "Devices"
 msgstr "Preseos"
 
-#: ../src/mpd-storage-device-tile.c:165
+#: ../src/mpd-storage-device-tile.c:242
 #, c-format
-msgid "Could not run %s"
-msgstr "Nun pudo executase %s"
+msgid "Could not run \"%s\""
+msgstr "Nun pudo executase \"%s\""
 
-#: ../src/mpd-storage-device-tile.c:167
+#: ../src/mpd-storage-device-tile.c:244
 msgid "Import error"
 msgstr "Fallu durante la importación"
 
 #. TODO: import button should only be shown if the import apps are available
 #. Import button
-#: ../src/mpd-storage-device-tile.c:519
+#: ../src/mpd-storage-device-tile.c:596
 msgid "Import data"
 msgstr "Importar"
 
 #. Eject button
-#: ../src/mpd-storage-device-tile.c:530
+#: ../src/mpd-storage-device-tile.c:607
 msgid "Eject"
 msgstr "Espulsar"
 
 #. Open button
-#: ../src/mpd-storage-device-tile.c:541
+#: ../src/mpd-storage-device-tile.c:618
 msgid "Open"
 msgstr "Abrir"
 
-#: ../src/mpd-storage-device-tile.c:734
+#: ../src/mpd-storage-device-tile.c:811
 #, c-format
 msgid "<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
 msgstr "<span font-weight='bold'>%s</span> usando <span color='%s'>%d%% de %s</span>"
 
-#: ../src/mpd-storage-device-tile.c:742
+#: ../src/mpd-storage-device-tile.c:819
 #, c-format
 msgid "<span font-weight='bold'>%s</span>"
 msgstr "<span font-weight='bold'>%s</span>"
@@ -253,10 +253,13 @@ msgid "Silent"
 msgstr "Silenciu"
 
 #: ../src/mpd-volume-tile.c:355
-msgid "Netbook volume"
-msgstr "Volume del miniordenador"
+msgid "Computer volume"
+msgstr "Volume del equipu"
 
 #: ../src/mpd-volume-tile.c:371
 msgid "Mute"
 msgstr "Silenciu"
+
+#~ msgid "Netbook volume"
+#~ msgstr "Volume del miniordenador"
 
