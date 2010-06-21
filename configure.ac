@@ -1,6 +1,6 @@
 
 AC_PREREQ(2.53)
-AC_INIT([moblin-panel-devices], [0.2.0], [http://bugzilla.moblin.org])
+AC_INIT([meego-panel-devices], [0.2.0], [http://bugzilla.meego.org])
 AC_CONFIG_AUX_DIR([build])
 AC_CONFIG_MACRO_DIR([build])
 AM_INIT_AUTOMAKE([1.10 foreign -Wno-portability no-define])
@@ -62,7 +62,7 @@ gvc_deps='libpulse-mainloop-glib >= 0.9.15'
 PKG_CHECK_MODULES(GVC, $gvc_deps)
 
 #
-# Moblin Panel Devices
+# Meego Panel Devices
 #
 
 PKG_CHECK_MODULES(MPD,
@@ -75,7 +75,7 @@ PKG_CHECK_MODULES(MPD,
                   gio-2.0
                   libcanberra-gtk
                   libnotify
-                  moblin-panel >= 0.75.4
+                  meego-panel >= 0.75.4
                   mx-1.0 >= 0.99.0)
 
 AC_ARG_ENABLE([cache],
@@ -101,7 +101,7 @@ eck_deps='dbus-glib-1'
 PKG_CHECK_MODULES(ECK, $eck_deps)
 
 #
-# Moblin Power Icon
+# Meego Power Icon
 #
 
 PKG_CHECK_MODULES(MPI,
@@ -112,22 +112,22 @@ PKG_CHECK_MODULES(MPI,
                   gconf-2.0
                   gdk-x11-2.0
                   libnotify
-                  moblin-panel >= 0.75.4
+                  meego-panel >= 0.75.4
                   mx-1.0)
 
 #
 # Common stuff
 #
 
-MOBLIN_PANELS_DIR=`$PKG_CONFIG --variable=moblin_panel_panels_dir moblin-panel`
-AC_SUBST(MOBLIN_PANELS_DIR)
+MEEGO_PANELS_DIR=`$PKG_CONFIG --variable=meego_panel_panels_dir meego-panel`
+AC_SUBST(MEEGO_PANELS_DIR)
 
 AC_OUTPUT([
   build/Makefile
   data/icons/Makefile
   data/Makefile
-  data/moblin-panel-devices.desktop.in
-  data/org.moblin.UX.Shell.Panels.devices.service
+  data/meego-panel-devices.desktop.in
+  data/com.meego.UX.Shell.Panels.devices.service
   data/theme/Makefile
   egg-console-kit/Makefile
   gpm/Makefile
@@ -135,8 +135,8 @@ AC_OUTPUT([
   Makefile
   po/Makefile.in
   power-icon/data/Makefile
-  power-icon/data/moblin-power-icon.desktop.in
-  power-icon/data/org.moblin.UX.Shell.Panels.power.service
+  power-icon/data/meego-power-icon.desktop.in
+  power-icon/data/com.meego.UX.Shell.Panels.power.service
   power-icon/data/theme/Makefile
   power-icon/data/theme/power-icon.css
   power-icon/Makefile
