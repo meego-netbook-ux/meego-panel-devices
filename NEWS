@@ -1,15 +1,15 @@
 
-Version 0.1.32, 2010-06-17
+Version 0.1.32, 2010-06-23
+
+- l10n: Updates to ast, pl (tracked by BMC#3341)
+
+Version 0.1.31, 2010-06-17
 
 - Fixes: http://bugs.meego.com/show_bug.cgi?id=61
 - Fixes: http://bugs.meego.com/show_bug.cgi?id=1833
 - Fixes: http://bugs.meego.com/show_bug.cgi?id=2749
 - Fixes: http://bugs.meego.com/show_bug.cgi?id=1277
 - Fixes http://bugs.meego.com/show_bug.cgi?id=2283
-
-Version 0.1.31, 2010-05-20
-
-- l10n: Updates to ja, tr, fi (tracked by BMC#1681)
 
 Version 0.1.30, 2010-05-18
 
