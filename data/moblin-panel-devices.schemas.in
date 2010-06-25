@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<gconfschemafile>
+  <schemalist>
+    <schema>
+      <key>/schemas/desktop/moblin/panel-devices/brightness_enabled</key>
+      <applyto>/desktop/moblin/panel-devices/brightness_enabled</applyto>
+      <owner>moblin-panel-devices</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short/>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/desktop/moblin/panel-devices/brightness_value</key>
+      <applyto>/desktop/moblin/panel-devices/brightness_value</applyto>
+      <owner>moblin-panel-devices</owner>
+      <type>float</type>
+      <default>1.0</default>
+      <locale name="C">
+        <short/>
+      </locale>
+    </schema>
+  </schemalist>
+</gconfschemafile>

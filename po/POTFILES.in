@@ -1,5 +1,6 @@
 # List of source files containing translatable strings.
 data/moblin-panel-devices.desktop.in.in
+data/moblin-panel-devices.schemas.in
 gvc/gvc-mixer-control.c
 power-icon/data/moblin-power-icon.desktop.in.in
 power-icon/src/moblin-power-icon.c
