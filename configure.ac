@@ -30,6 +30,7 @@ AM_PROG_CC_C_O
 
 PKG_PROG_PKG_CONFIG
 AS_ALL_LINGUAS
+AM_GCONF_SOURCE_2
 
 headers="
 errno.h \
@@ -127,6 +128,7 @@ AC_OUTPUT([
   data/icons/Makefile
   data/Makefile
   data/meego-panel-devices.desktop.in
+  data/meego-panel-devices.schemas
   data/com.meego.UX.Shell.Panels.devices.service
   data/theme/Makefile
   egg-console-kit/Makefile
