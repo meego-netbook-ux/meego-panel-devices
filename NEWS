@@ -1,3 +1,7 @@
+Version 0.1.33, 2010-06-25
+
+- Fixes: http://bugs.meego.com/show_bug.cgi?id=906
+- l10n: Updates to zh_TW (tracked by BMC#3341)
 
 Version 0.1.32, 2010-06-23
 
