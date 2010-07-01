@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-10 09:42+0000\n"
+"POT-Creation-Date: 2010-06-30 09:27+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Anna-Lena Schon <anna-lenax.schon@intel.com>\n"
 "Language-Team: \n"
@@ -59,75 +59,71 @@ msgid "Running low on battery"
 msgstr "Batteriet börjar ta slut"
 
 #: ../power-icon/src/mpd-power-icon.c:77
-msgid "We've noticed that your battery is running a bit low. If you can it would be a good idea to plug in and top up."
-msgstr "Vi har märkt att ditt batteri börjar ta slut. Om du kan vore det en bra idé att ladda det snart."
+msgid "I've noticed that your battery is running a bit low. If you can, it would be a good idea to plug in and top up."
+msgstr "Jag har märkt att ditt batteri börjar ta slut. Om du kan vore det en bra idé att ladda det snart."
 
 #: ../power-icon/src/mpd-power-icon.c:80
 msgid "Getting close to empty"
 msgstr "Nu är det nästan slut"
 
 #: ../power-icon/src/mpd-power-icon.c:81
-msgid "You're running quite low on battery. It'd be a good idea to save all your work and plug in as soon as you can"
-msgstr "Nu är ditt batteri nästan helt slut. Det vore en god idé att spara allt ditt arbete och ansluta så snart du kan"
+msgid "You're running quite low on battery. It'd be a good idea to save all your work and plug in as soon as you can."
+msgstr "Nu är ditt batteri nästan helt slut. Det vore en god idé att spara allt ditt arbete och ansluta så snart du kan."
 
 #: ../power-icon/src/mpd-power-icon.c:85
 msgid "Danger!"
 msgstr "Fara!"
 
 #: ../power-icon/src/mpd-power-icon.c:86
-msgid "Sorry, your computer is about to run out of battery. We're going to have to turn off now. Please save your work and hope to see you again soon."
-msgstr "Batteriet i datorn är nästan slut. Vi måste stänga av datorn nu. Spara ditt arbete, hoppas vi ses igen snart."
+msgid "Sorry, your computer is about to run out of battery. I'm going to have to turn off now. Please save your work and hope to see you again soon."
+msgstr "Batteriet i datorn är nästan slut. Jag måste stänga av datorn nu. Spara ditt arbete och hoppas vi ses snart igen."
 
 #: ../power-icon/src/mpd-power-icon.c:336
 msgid "Would you like to turn off now?"
 msgstr "Vill du stänga av nu?"
 
 #: ../power-icon/src/mpd-power-icon.c:337
-msgid "If you don't decide I'll turn off in 30 seconds."
+msgid "If you don't decide, I'll turn off in 30 seconds."
 msgstr "Om du inte bestämmer dig snart stänger jag av datorn om 30 sekunder."
 
-#: ../power-icon/src/mpd-power-icon.c:441
+#: ../power-icon/src/mpd-power-icon.c:431
 msgid "battery"
 msgstr "batteri"
 
 #: ../power-icon/src/mpd-shutdown-notification.c:71
 #, c-format
-msgid "If you don't decide I'll turn off in %d seconds"
+msgid "If you don't decide, I'll turn off in %d seconds"
 msgstr "Om du inte bestämmer dig snart stänger jag av datorn om %d sekunder."
 
 #: ../power-icon/src/mpd-shutdown-notification.c:127
 msgid "Turn off"
 msgstr "Stäng av"
 
-#: ../power-icon/tests/test-battery-notification.c:58
-msgid "Moblin Power Icon"
-msgstr "Moblin-strömikon"
-
 #: ../src/moblin-panel-devices.c:121
 msgid "MeeGo Devices Panel"
 msgstr "MeeGo enhetspanel"
 
-#: ../src/mpd-battery-device.c:329
+#: ../src/mpd-battery-device.c:371
 #, c-format
 msgid "Sorry, you don't appear to have a battery installed."
 msgstr "Det verkar inte som om du har installerat ett batteri."
 
-#: ../src/mpd-battery-device.c:333
+#: ../src/mpd-battery-device.c:375
 #, c-format
 msgid "Your battery is charging. It is about %d%% full."
 msgstr "Ditt batteri laddas. Det är ungefär %d%% fullt."
 
-#: ../src/mpd-battery-device.c:338
+#: ../src/mpd-battery-device.c:380
 #, c-format
 msgid "Your battery is being used. It is about %d%% full."
 msgstr "Ditt batteri används. Det är ungefär %d%% fullt."
 
-#: ../src/mpd-battery-device.c:343
+#: ../src/mpd-battery-device.c:385
 #, c-format
 msgid "Your battery is fully charged and you're ready to go."
 msgstr "Ditt batteri är helt laddat och du kan börja."
 
-#: ../src/mpd-battery-device.c:347
+#: ../src/mpd-battery-device.c:389
 #, c-format
 msgid "Sorry, it looks like your battery is broken."
 msgstr "Det verkar som om ditt batteri gått sönder."
@@ -163,8 +159,7 @@ msgstr "Andra enheter"
 msgid "Ejecting failed, looks like an application is using it"
 msgstr "Utmatning misslyckades, det ser ut som att ett program använder det"
 
-#: ../src/mpd-devices-tile.c:389
-#: ../src/mpd-devices-tile.c:421
+#: ../src/mpd-devices-tile.c:417
 msgid "It is safe to unplug this device now"
 msgstr "Det är säkert att ta ut denna enhet nu"
 
@@ -181,37 +176,37 @@ msgstr "Papperskorgen"
 msgid "Devices"
 msgstr "Enheter"
 
-#: ../src/mpd-storage-device-tile.c:162
+#: ../src/mpd-storage-device-tile.c:242
 #, c-format
-msgid "Could not run %s"
-msgstr "Kunde inte köra %s"
+msgid "Could not run \"%s\""
+msgstr "Kunde inte köra \"%s\""
 
-#: ../src/mpd-storage-device-tile.c:164
+#: ../src/mpd-storage-device-tile.c:244
 msgid "Import error"
 msgstr "Importfel"
 
 #. TODO: import button should only be shown if the import apps are available
 #. Import button
-#: ../src/mpd-storage-device-tile.c:499
+#: ../src/mpd-storage-device-tile.c:596
 msgid "Import data"
 msgstr "Importera data"
 
 #. Eject button
-#: ../src/mpd-storage-device-tile.c:510
+#: ../src/mpd-storage-device-tile.c:607
 msgid "Eject"
 msgstr "Mata ut"
 
 #. Open button
-#: ../src/mpd-storage-device-tile.c:521
+#: ../src/mpd-storage-device-tile.c:618
 msgid "Open"
 msgstr "Öppna"
 
-#: ../src/mpd-storage-device-tile.c:711
+#: ../src/mpd-storage-device-tile.c:811
 #, c-format
 msgid "<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
 msgstr "<span font-weight='bold'>%s</span> använder <span color='%s'>%d%% av %s</span>"
 
-#: ../src/mpd-storage-device-tile.c:719
+#: ../src/mpd-storage-device-tile.c:819
 #, c-format
 msgid "<span font-weight='bold'>%s</span>"
 msgstr "<span font-weight='bold'>%s</span>"
@@ -253,13 +248,17 @@ msgid "Silent"
 msgstr "Helt tyst"
 
 #: ../src/mpd-volume-tile.c:355
-msgid "Netbook volume"
-msgstr "Netbook-volym"
+msgid "Computer volume"
+msgstr "Dator volym"
 
 #: ../src/mpd-volume-tile.c:371
 msgid "Mute"
 msgstr "Ljud avstängt"
 
+#~ msgid "Moblin Power Icon"
+#~ msgstr "Moblin-strömikon"
+#~ msgid "Netbook volume"
+#~ msgstr "Netbook-volym"
 #~ msgid ""
 #~ "<span font-weight='bold'>Importing data</span> <span color='%s'>%d%%</"
 #~ "span>"
