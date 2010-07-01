@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moblin-panel-devices\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-10 09:42+0000\n"
-"PO-Revision-Date: 2010-05-11 08:24-0800\n"
+"POT-Creation-Date: 2010-06-30 09:27+0000\n"
+"PO-Revision-Date: 2010-07-01 09:58-0800\n"
 "Last-Translator: Thomas <thomas.martens@ptiglobal.net>\n"
 "Language-Team: Dutch\n"
 "MIME-Version: 1.0\n"
@@ -64,7 +64,7 @@ msgid "Running low on battery"
 msgstr "De batterij is bijna leeg"
 
 #: ../power-icon/src/mpd-power-icon.c:77
-msgid "We've noticed that your battery is running a bit low. If you can it would be a good idea to plug in and top up."
+msgid "I've noticed that your battery is running a bit low. If you can, it would be a good idea to plug in and top up."
 msgstr "De batterij begint leeg te raken. Dit is een goed moment om de stroom aan te sluiten en de batterij op te laden."
 
 #: ../power-icon/src/mpd-power-icon.c:80
@@ -72,15 +72,15 @@ msgid "Getting close to empty"
 msgstr "De batterij begint leeg te raken"
 
 #: ../power-icon/src/mpd-power-icon.c:81
-msgid "You're running quite low on battery. It'd be a good idea to save all your work and plug in as soon as you can"
-msgstr "De batterij is erg leeg. Probeer als het kan zo spoedig mogelijk de stroom aan te sluiten, en al je werk op te slaan."
+msgid "You're running quite low on battery. It'd be a good idea to save all your work and plug in as soon as you can."
+msgstr "De batterij is erg leeg. Probeer als het kan al je werk op te slaan en zo snel mogelijk de stroom aan te sluiten."
 
 #: ../power-icon/src/mpd-power-icon.c:85
 msgid "Danger!"
 msgstr "Gevaar!"
 
 #: ../power-icon/src/mpd-power-icon.c:86
-msgid "Sorry, your computer is about to run out of battery. We're going to have to turn off now. Please save your work and hope to see you again soon."
+msgid "Sorry, your computer is about to run out of battery. I'm going to have to turn off now. Please save your work and hope to see you again soon."
 msgstr "Sorry, je batterij is bijna helemaal leeg. We sluiten nu automatisch af. Sla alsjeblieft je werk op. Tot snel!"
 
 #: ../power-icon/src/mpd-power-icon.c:336
@@ -88,51 +88,47 @@ msgid "Would you like to turn off now?"
 msgstr "Wil je nu afsluiten?"
 
 #: ../power-icon/src/mpd-power-icon.c:337
-msgid "If you don't decide I'll turn off in 30 seconds."
-msgstr "Als je niet beslist sluit ik in 30 seconden af"
+msgid "If you don't decide, I'll turn off in 30 seconds."
+msgstr "Als je niet beslist sluit ik in 30 seconden af."
 
-#: ../power-icon/src/mpd-power-icon.c:441
+#: ../power-icon/src/mpd-power-icon.c:431
 msgid "battery"
 msgstr "batterij"
 
 #: ../power-icon/src/mpd-shutdown-notification.c:71
 #, c-format
-msgid "If you don't decide I'll turn off in %d seconds"
+msgid "If you don't decide, I'll turn off in %d seconds"
 msgstr "Als je niet beslist sluit ik in %d seconden af"
 
 #: ../power-icon/src/mpd-shutdown-notification.c:127
 msgid "Turn off"
 msgstr "Uitschakelen"
 
-#: ../power-icon/tests/test-battery-notification.c:58
-msgid "Moblin Power Icon"
-msgstr "Moblin Energie pictogram"
-
 #: ../src/moblin-panel-devices.c:121
 msgid "MeeGo Devices Panel"
 msgstr "MeeGo Apparaten paneel"
 
-#: ../src/mpd-battery-device.c:329
+#: ../src/mpd-battery-device.c:371
 #, c-format
 msgid "Sorry, you don't appear to have a battery installed."
 msgstr "Sorry, er is geen batterij beschikbaar."
 
-#: ../src/mpd-battery-device.c:333
+#: ../src/mpd-battery-device.c:375
 #, c-format
 msgid "Your battery is charging. It is about %d%% full."
 msgstr "Je batterij is aan het opladen. Hij is ongeveer %d%% vol."
 
-#: ../src/mpd-battery-device.c:338
+#: ../src/mpd-battery-device.c:380
 #, c-format
 msgid "Your battery is being used. It is about %d%% full."
 msgstr "Je batterij wordt gebruikt. Hij is ongeveer %d%% vol."
 
-#: ../src/mpd-battery-device.c:343
+#: ../src/mpd-battery-device.c:385
 #, c-format
 msgid "Your battery is fully charged and you're ready to go."
 msgstr "De batterij is volledig opgeladen en het systeem is klaar voor gebruik."
 
-#: ../src/mpd-battery-device.c:347
+#: ../src/mpd-battery-device.c:389
 #, c-format
 msgid "Sorry, it looks like your battery is broken."
 msgstr "Sorry, het lijkt erop dat de batterij niet werkt."
@@ -168,8 +164,7 @@ msgstr "Andere apparaten"
 msgid "Ejecting failed, looks like an application is using it"
 msgstr "Verwijderen mislukt, het lijkt erop dat het gebruikt wordt door een toepassing"
 
-#: ../src/mpd-devices-tile.c:389
-#: ../src/mpd-devices-tile.c:421
+#: ../src/mpd-devices-tile.c:417
 msgid "It is safe to unplug this device now"
 msgstr "Het is nu veilig om het apparaat te ontkoppelen"
 
@@ -186,39 +181,39 @@ msgstr "Prullenbak"
 msgid "Devices"
 msgstr "Apparaten"
 
-#: ../src/mpd-storage-device-tile.c:162
+#: ../src/mpd-storage-device-tile.c:242
 #, c-format
-msgid "Could not run %s"
-msgstr "Kon %s niet uitvoeren"
+msgid "Could not run \"%s\""
+msgstr "Kon \"%s\" niet uitvoeren"
 
-#: ../src/mpd-storage-device-tile.c:164
+#: ../src/mpd-storage-device-tile.c:244
 msgid "Import error"
 msgstr "Importeer fout"
 
 #. TODO: import button should only be shown if the import apps are available
 #. Import button
-#: ../src/mpd-storage-device-tile.c:499
+#: ../src/mpd-storage-device-tile.c:596
 msgid "Import data"
 msgstr "Gegevens importeren"
 
 #. Eject button
-#: ../src/mpd-storage-device-tile.c:510
+#: ../src/mpd-storage-device-tile.c:607
 msgid "Eject"
 msgstr "Uitwerpen"
 
 #. Open button
-#: ../src/mpd-storage-device-tile.c:521
+#: ../src/mpd-storage-device-tile.c:618
 msgid "Open"
 msgstr "Openen"
 
 # Context is missing; a dev note what is used would have been helpful.
 # Another translation that may fit better in the actual context could be Dutch "met behulp van"
-#: ../src/mpd-storage-device-tile.c:711
+#: ../src/mpd-storage-device-tile.c:811
 #, c-format
 msgid "<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
 msgstr "<span font-weight='bold'>%s</span> gebruik <span color='%s'>%d%% van %s</span>"
 
-#: ../src/mpd-storage-device-tile.c:719
+#: ../src/mpd-storage-device-tile.c:819
 #, c-format
 msgid "<span font-weight='bold'>%s</span>"
 msgstr "<span font-weight='bold'>%s</span>"
@@ -263,13 +258,17 @@ msgid "Silent"
 msgstr "Stil"
 
 #: ../src/mpd-volume-tile.c:355
-msgid "Netbook volume"
-msgstr "Netbook volume"
+msgid "Computer volume"
+msgstr "Computer volume"
 
 #: ../src/mpd-volume-tile.c:371
 msgid "Mute"
 msgstr "Geluiden dempen"
 
+#~ msgid "Moblin Power Icon"
+#~ msgstr "Moblin Energie pictogram"
+#~ msgid "Netbook volume"
+#~ msgstr "Netbook volume"
 #~ msgid ""
 #~ "<span font-weight='bold'>Importing data</span> <span color='%s'>%d%%</"
 #~ "span>"
