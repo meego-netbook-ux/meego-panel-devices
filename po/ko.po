@@ -97,7 +97,7 @@ msgstr "결정하지 않으시면 %d초 후에 종료됩니다."
 
 #: ../power-icon/src/mpd-shutdown-notification.c:127
 msgid "Turn off"
-msgstr "끕니다."
+msgstr "종료"
 
 #: ../src/moblin-panel-devices.c:121
 msgid "MeeGo Devices Panel"
