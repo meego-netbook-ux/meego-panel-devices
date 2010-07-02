@@ -79,6 +79,13 @@ PKG_CHECK_MODULES(MPD,
                   meego-panel >= 0.75.4
                   mx-1.0 >= 0.99.0)
 
+AC_MSG_CHECKING([whether to install test tools])
+AC_ARG_ENABLE([test-tools],
+              [AC_HELP_STRING([--enable-test-tools],
+                              [Enable extra tools for testing and debugging])])
+AC_MSG_RESULT([$enable_test_tools])
+AM_CONDITIONAL([INSTALL_TEST_TOOLS], [test "$enable_test_tools" = "yes"])
+
 AC_ARG_ENABLE([cache],
               [AC_HELP_STRING([--enable-cache],
                               [Enable Mx image cache generation])],
