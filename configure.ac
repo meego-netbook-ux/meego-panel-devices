@@ -51,7 +51,7 @@ AC_CHECK_HEADERS($headers, [],
 # Gnome Power Manager
 #
 
-gpm_deps='gdk-x11-2.0 glib-2.0 gobject-2.0 xrandr'
+gpm_deps='gdk-x11-2.0 glib-2.0 gobject-2.0 xrandr xext'
 PKG_CHECK_MODULES(GPM, $gpm_deps)
 
 #
