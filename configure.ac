@@ -70,7 +70,7 @@ PKG_CHECK_MODULES(MPD,
                   $gvc_deps
                   clutter-1.0
                   clutter-gtk-0.10
-                  devkit-power-gobject
+                  upower-glib >= 0.9.0
                   gconf-2.0
                   gio-2.0
                   libcanberra-gtk
@@ -115,7 +115,7 @@ PKG_CHECK_MODULES(MPI,
                   $eck_deps
                   clutter-1.0
                   clutter-gtk-0.10
-                  devkit-power-gobject
+                  upower-glib >= 0.9.0
                   gconf-2.0
                   gdk-x11-2.0
                   libnotify
