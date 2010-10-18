@@ -64,7 +64,7 @@ _client_device_added_cb (UpClient        *client,
   if (NULL == priv->device)
   {
     g_object_get (device,
-                  "type", &device_type,
+                  "kind", &device_type,
                   NULL);
 
     if (UP_DEVICE_KIND_BATTERY == device_type)
