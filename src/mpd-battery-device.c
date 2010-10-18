@@ -116,56 +116,6 @@ _client_device_changed_cb (UpClient        *client,
   }
 }
 
-static GObject *
-_constructor (GType                  type,
-              unsigned int           n_properties,
-              GObjectConstructParam *properties)
-{
-  MpdBatteryDevice *self = (MpdBatteryDevice *)
-                              G_OBJECT_CLASS (mpd_battery_device_parent_class)
-                                ->constructor (type, n_properties, properties);
-  MpdBatteryDevicePrivate *priv = GET_PRIVATE (self);
-  GPtrArray     *devices;
-  GError        *error = NULL;
-  unsigned int   i;
-
-  g_return_val_if_fail (priv->client, NULL);
-
-  /* Look up battery device. */
-
-  devices = up_client_enumerate_devices_sync (priv->client, NULL, &error);
-  if (error)
-  {
-    g_critical ("%s : %s", G_STRLOC, error->message);
-    g_clear_error (&error);
-    g_object_unref (self);
-    return NULL;
-  }
-
-  for (i = 0; i < devices->len; i++)
-  {
-    UpDevice *device = g_ptr_array_index (devices, i);
-    UpDeviceKind device_type;
-    g_object_get (device,
-                  "type", &device_type,
-                  NULL);
-
-    if (UP_DEVICE_KIND_BATTERY == device_type)
-      priv->device = g_object_ref (device);
-  }
-
-  g_ptr_array_unref (devices);
-
-  /* Set initial properties. */
-
-  mpd_battery_device_set_percentage (self,
-                                      mpd_battery_device_get_percentage (self));
-  mpd_battery_device_set_state (self,
-                                mpd_battery_device_get_state (self));
-
-  return (GObject *) self;
-}
-
 static void
 _get_property (GObject      *object,
                unsigned int  property_id,
@@ -220,7 +170,6 @@ mpd_battery_device_class_init (MpdBatteryDeviceClass *klass)
 
   g_type_class_add_private (klass, sizeof (MpdBatteryDevicePrivate));
 
-  object_class->constructor = _constructor;
   object_class->dispose = _dispose;
   object_class->get_property = _get_property;
   object_class->set_property = _set_property;
@@ -251,6 +200,7 @@ static void
 mpd_battery_device_init (MpdBatteryDevice *self)
 {
   MpdBatteryDevicePrivate *priv = GET_PRIVATE (self);
+  GError  *error = NULL;
 
   priv->client = up_client_new ();
   g_signal_connect (priv->client, "device-added",
@@ -259,6 +209,16 @@ mpd_battery_device_init (MpdBatteryDevice *self)
                     G_CALLBACK (_client_device_removed_cb), self);
   g_signal_connect (priv->client, "device-changed",
                     G_CALLBACK (_client_device_changed_cb), self);
+
+  mpd_battery_device_set_percentage (self, -1);
+  mpd_battery_device_set_state (self, MPD_BATTERY_DEVICE_STATE_MISSING);
+
+  /* Enumerate devices -- this will emit "device-added" */
+  up_client_enumerate_devices_sync (priv->client, NULL, &error);
+  if (error)  {
+    g_critical ("%s : %s", G_STRLOC, error->message);
+    g_clear_error (&error);
+  }
 }
 
 MpdBatteryDevice *
