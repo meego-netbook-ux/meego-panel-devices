@@ -69,7 +69,7 @@ PKG_CHECK_MODULES(MPD,
                   $gpm_deps
                   $gvc_deps
                   clutter-1.0
-                  clutter-gtk-0.10
+                  clutter-gtk-0.12
                   devkit-power-gobject
                   gconf-2.0
                   gio-2.0
@@ -114,7 +114,7 @@ PKG_CHECK_MODULES(ECK, $eck_deps)
 PKG_CHECK_MODULES(MPI,
                   $eck_deps
                   clutter-1.0
-                  clutter-gtk-0.10
+                  clutter-gtk-0.12
                   devkit-power-gobject
                   gconf-2.0
                   gdk-x11-2.0
