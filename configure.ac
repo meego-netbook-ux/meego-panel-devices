@@ -1,5 +1,5 @@
 AC_PREREQ(2.53)
-AC_INIT([meego-panel-devices], [0.2.8], [http://bugzilla.meego.org])
+AC_INIT([meego-panel-devices], [0.2.9], [http://bugzilla.meego.org])
 AC_CONFIG_AUX_DIR([build])
 AC_CONFIG_MACRO_DIR([build])
 AM_INIT_AUTOMAKE([1.10 foreign -Wno-portability no-define])
