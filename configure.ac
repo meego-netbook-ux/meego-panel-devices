@@ -76,7 +76,7 @@ PKG_CHECK_MODULES(MPD,
                   libcanberra-gtk
                   libnotify
                   meego-panel >= 0.75.4
-                  mx-1.0 >= 0.99.0)
+                  mx-1.0 >= 1.1.12)
 
 AC_MSG_CHECKING([whether to install test tools])
 AC_ARG_ENABLE([test-tools],
