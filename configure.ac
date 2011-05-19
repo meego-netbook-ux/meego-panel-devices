@@ -73,6 +73,7 @@ PKG_CHECK_MODULES(MPD,
                   devkit-power-gobject
                   gconf-2.0
                   gio-2.0
+                  gio-unix-2.0
                   libcanberra-gtk
                   libnotify
                   meego-panel >= 0.75.4
