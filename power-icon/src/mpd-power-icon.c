@@ -170,10 +170,17 @@ do_notification (MpdPowerIcon       *self,
 
   g_return_if_fail (level > NOTIFICATION_NONE);
 
+#ifdef HAVE_NOTIFY_0_7
+  note = notify_notification_new (_(_messages[level].title),
+                                  _(_messages[level].message),
+                                  _messages[level].icon);
+#else
   note = notify_notification_new (_(_messages[level].title),
                                   _(_messages[level].message),
                                   _messages[level].icon,
                                   NULL);
+#endif
+
   notify_notification_set_urgency (note, urgency);
   g_signal_connect (note, "closed",
                     G_CALLBACK (_notification_closed_cb), self);

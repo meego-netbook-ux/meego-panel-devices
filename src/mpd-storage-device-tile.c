@@ -242,7 +242,12 @@ _import_clicked_cb (MxButton             *button,
     NotifyNotification *note;
     char *message = g_strdup_printf (_("Could not run \"%s\""), program);
 
+#ifdef HAVE_NOTIFY_0_7
+    note = notify_notification_new (_("Import error"), message, NULL);
+#else
     note = notify_notification_new (_("Import error"), message, NULL, NULL);
+#endif
+
     notify_notification_set_urgency (note, NOTIFY_URGENCY_CRITICAL);
 
     notify_notification_show (note, NULL);

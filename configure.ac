@@ -79,6 +79,13 @@ PKG_CHECK_MODULES(MPD,
                   meego-panel >= 0.75.4
                   mx-1.0 >= 1.1.12)
 
+PKG_CHECK_MODULES(NOTIFY_0_7, libnotify >= 0.7,
+                  have_notify_0_7="yes",
+                  have_notify_0_7="no")
+if test $have_notify_0_7 = "yes"; then
+       AC_DEFINE(HAVE_NOTIFY_0_7, 1, [we have libnotify 0.7 or better])
+fi
+
 AC_MSG_CHECKING([whether to install test tools])
 AC_ARG_ENABLE([test-tools],
               [AC_HELP_STRING([--enable-test-tools],
