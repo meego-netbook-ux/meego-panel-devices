@@ -1,21 +1,22 @@
-# Galician translations for panel-devices package.
-# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the panel-devices package.
-# Miguel Anxo Bouzada <mbouzada@gamil.com>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
+# Translators:
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: panel-devices\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-06 23:21+0000\n"
-"PO-Revision-Date: 2010-07-07 09:10+0100\n"
-"Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
-"Language-Team: Galician <proxecto@trasno.net>\n"
+"Project-Id-Version: meego-panel-devices\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-04 17:59+0000\n"
+"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"Language-Team: Galician (http://www.transifex.net/projects/p/meego/team/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Language: Galician\n"
+"Language: gl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../data/meego-panel-devices.desktop.in.in.h:1
 msgid "Devices panel"
@@ -31,18 +32,23 @@ msgid "Sleep timeout"
 msgstr "Tempo de espera para a suspensión"
 
 #: ../data/meego-panel-devices.schemas.in.h:2
-msgid "Value of -1 means never sleep, other values are seconds of continuous idle state before sleeping."
-msgstr "Un valor igual a -1 significa que nunca se produce a suspensión. Outros valores representan os segundos de inactividade continuada antes de que se produza a suspensión."
+msgid ""
+"Value of -1 means never sleep, other values are seconds of continuous idle "
+"state before sleeping."
+msgstr ""
+"Un valor igual a -1 significa que nunca se produce a suspensión. Outros "
+"valores representan os segundos de inactividade continuada antes de que se "
+"produza a suspensión."
 
 #. translators:
 #. * The device has been disabled
-#: ../gvc/gvc-mixer-control.c:1003
+#: ../gvc/gvc-mixer-control.c:1005
 msgid "Disabled"
 msgstr "Desactivado"
 
 #. translators:
 #. * The number of sound outputs on a particular device
-#: ../gvc/gvc-mixer-control.c:1010
+#: ../gvc/gvc-mixer-control.c:1012
 #, c-format
 msgid "%u Output"
 msgid_plural "%u Outputs"
@@ -51,14 +57,14 @@ msgstr[1] "%u saídas"
 
 #. translators:
 #. * The number of sound inputs on a particular device
-#: ../gvc/gvc-mixer-control.c:1020
+#: ../gvc/gvc-mixer-control.c:1022
 #, c-format
 msgid "%u Input"
 msgid_plural "%u Inputs"
 msgstr[0] "%u entrada"
 msgstr[1] "%u entradas"
 
-#: ../gvc/gvc-mixer-control.c:1316
+#: ../gvc/gvc-mixer-control.c:1320
 msgid "System Sounds"
 msgstr "Sons do sistema"
 
@@ -71,26 +77,36 @@ msgid "Running low on battery"
 msgstr "Baixa carga de batería"
 
 #: ../power-icon/src/mpd-power-icon.c:78
-msgid "I've noticed that your battery is running a bit low. If you can, it would be a good idea to plug in and top up."
-msgstr "Observe que a carga da batería está un pouco baixa. Se pode, enchúfea para cargala"
+msgid ""
+"I've noticed that your battery is running a bit low. If you can, it would be"
+" a good idea to plug in and top up."
+msgstr ""
+"Observe que a carga da batería está un pouco baixa. Se pode, enchúfea para "
+"cargala"
 
 #: ../power-icon/src/mpd-power-icon.c:81
 msgid "Getting close to empty"
 msgstr "Case baleira"
 
 #: ../power-icon/src/mpd-power-icon.c:82
-msgid "You're running quite low on battery. It'd be a good idea to save all your work and plug in as soon as you can."
-msgstr "A carga da batería está moi baixa. Recomendamoslle que garde o seu traballo e se conecte a rede eléctrica o antes posíbel."
+msgid ""
+"You're running quite low on battery. It'd be a good idea to save all your "
+"work and plug in as soon as you can."
+msgstr ""
+"A carga da batería está moi baixa. Recomendamoslle que garde o seu traballo "
+"e se conecte a rede eléctrica o antes posíbel."
 
 #: ../power-icon/src/mpd-power-icon.c:86
 msgid "Danger!"
 msgstr "Perigo!"
 
 #: ../power-icon/src/mpd-power-icon.c:87
-msgid "Sorry, your computer is about to run out of battery. I'm going to have to turn off now. Please save your work and hope to see you again soon."
-msgstr "O equipo está a quedarse sen batería. Vai ter que apagarse. Garde o seu traballo."
+msgid ""
+"Sorry, your computer is about to run out of battery. I'm going to have to go"
+" to sleep now. Please save your work and hope to see you again soon."
+msgstr ""
 
-#: ../power-icon/src/mpd-power-icon.c:486
+#: ../power-icon/src/mpd-power-icon.c:494
 msgid "battery"
 msgstr "batería"
 
@@ -166,66 +182,75 @@ msgstr ""
 "Se se conecta un dispositivo,\n"
 "será detectado automaticamente."
 
-#: ../src/mpd-devices-pane.c:104
+#: ../src/mpd-devices-pane.c:107
 msgid "Other devices"
 msgstr "Outros dispositivos"
 
-#: ../src/mpd-devices-tile.c:61
-msgid "Ejecting failed, looks like an application is using it"
-msgstr "Non foi posíbel expulsalo. Semella que un aplicativo está a usalo"
+#: ../src/mpd-devices-tile.c:66
+msgid "Sorry, we can't eject at the moment"
+msgstr ""
 
-#: ../src/mpd-devices-tile.c:423
+#: ../src/mpd-devices-tile.c:72
+#, c-format
+msgid "Sorry, we can't eject because <b>%s</b> is using the disk"
+msgstr ""
+
+#: ../src/mpd-devices-tile.c:548
 msgid "It is safe to unplug this device now"
 msgstr "Xa pode desconectar o dispositivo"
 
 #: ../src/mpd-disk-tile.c:65
 #, c-format
-msgid "<span font-weight='bold'>You are using</span> <span color='%s'>%d%% of %s</span>"
-msgstr "<span font-weight='bold'>Está a utilizar</span> <span color='%s'>%d%% de %s</span>"
+msgid ""
+"<span font-weight='bold'>You are using</span> <span color='%s'>%d%% of "
+"%s</span>"
+msgstr ""
+"<span font-weight='bold'>Está a utilizar</span> <span color='%s'>%d%% de "
+"%s</span>"
 
 #: ../src/mpd-folder-tile.c:186
 msgid "Trash"
 msgstr "Lixo"
 
-#: ../src/mpd-shell.c:126
+#: ../src/mpd-shell.c:128
 msgid "Devices"
 msgstr "Dispositivos"
 
-#: ../src/mpd-storage-device-tile.c:241
+#: ../src/mpd-storage-device-tile.c:243
 #, c-format
 msgid "Could not run \"%s\""
 msgstr "Non é posíbel executar «%s»"
 
-#: ../src/mpd-storage-device-tile.c:243
+#: ../src/mpd-storage-device-tile.c:245
 msgid "Import error"
 msgstr "Produciuse un erro durante a importación"
 
-#: ../src/mpd-storage-device-tile.c:354
+#: ../src/mpd-storage-device-tile.c:356
 msgid "Import photos"
 msgstr "Importar fotografías"
 
-#: ../src/mpd-storage-device-tile.c:356
+#: ../src/mpd-storage-device-tile.c:358
 msgid "Import media"
 msgstr "Importar multimedia"
 
-#. * Column 2: buttons
-#. 
 #. Open button
-#: ../src/mpd-storage-device-tile.c:633
+#: ../src/mpd-storage-device-tile.c:649
 msgid "Open"
 msgstr "Aberto"
 
 #. Eject button
-#: ../src/mpd-storage-device-tile.c:646
+#: ../src/mpd-storage-device-tile.c:655
 msgid "Eject"
 msgstr "Expulsar"
 
-#: ../src/mpd-storage-device-tile.c:866
+#: ../src/mpd-storage-device-tile.c:859
 #, c-format
-msgid "<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
-msgstr "<span font-weight='bold'>%s</span> usando <span color='%s'>%d%% de %s</span>"
+msgid ""
+"<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
+msgstr ""
+"<span font-weight='bold'>%s</span> usando <span color='%s'>%d%% de %s</span>"
 
-#: ../src/mpd-storage-device-tile.c:874
+#: ../src/mpd-storage-device-tile.c:867
 #, c-format
 msgid "<span font-weight='bold'>%s</span>"
 msgstr "<span font-weight='bold'>%s</span>"
@@ -270,9 +295,8 @@ msgstr "Silencioso"
 msgid "Computer volume"
 msgstr "Volume do computador"
 
-#: ../src/mpd-volume-tile.c:371
+#: ../src/mpd-volume-tile.c:372
 msgid "Mute"
 msgstr "Enmudecido"
 
-#~ msgid "Netbook brightness"
-#~ msgstr "Brillo da pantalla"
+

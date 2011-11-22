@@ -1,23 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
+# Dimitris Glezos <glezos@indifex.com>, 2011.
+# Yuri Myasoedov <omerta13@yandex.ru>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-19 16:51+0000\n"
-"PO-Revision-Date: 2010-10-19 19:27-0800\n"
-"Last-Translator: Bogdan Nosach <bogdan.nosach@ptiglobal.net>\n"
-"Language-Team: \n"
+"Project-Id-Version: meego-panel-devices\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-04 17:59+0000\n"
+"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"Language-Team: Russian (http://www.transifex.net/projects/p/meego/team/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Poedit-Language: Russian\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: ../data/meego-panel-devices.desktop.in.in.h:1
 msgid "Devices panel"
@@ -30,69 +30,83 @@ msgstr "устройства"
 
 #: ../data/meego-panel-devices.schemas.in.h:1
 msgid "Sleep timeout"
-msgstr "Истечение времени ожидания в спящем режиме"
+msgstr "Спящий режим"
 
 #: ../data/meego-panel-devices.schemas.in.h:2
-msgid "Value of -1 means never sleep, other values are seconds of continuous idle state before sleeping."
-msgstr "Значение -1 индицирует отсутствие сна, в то время как другие значения указывают на длительность (в секундах) непрерывного режима простоя перед переходом в спящий режим."
+msgid ""
+"Value of -1 means never sleep, other values are seconds of continuous idle "
+"state before sleeping."
+msgstr ""
+"«-1» — отключить переход в спящий режим; другие значения — продолжительность"
+" простоя (в секундах) перед переходом в спящий режим."
 
 #. translators:
 #. * The device has been disabled
-#: ../gvc/gvc-mixer-control.c:1003
+#: ../gvc/gvc-mixer-control.c:1005
 msgid "Disabled"
 msgstr "Отключено"
 
 #. translators:
 #. * The number of sound outputs on a particular device
-#: ../gvc/gvc-mixer-control.c:1010
+#: ../gvc/gvc-mixer-control.c:1012
 #, c-format
 msgid "%u Output"
 msgid_plural "%u Outputs"
-msgstr[0] "%u вывод"
-msgstr[1] "%u выводы"
+msgstr[0] "%u вход"
+msgstr[1] "%u входа"
+msgstr[2] "%u входов"
 
 #. translators:
 #. * The number of sound inputs on a particular device
-#: ../gvc/gvc-mixer-control.c:1020
+#: ../gvc/gvc-mixer-control.c:1022
 #, c-format
 msgid "%u Input"
 msgid_plural "%u Inputs"
-msgstr[0] "%u ввод"
-msgstr[1] "%u вводы"
+msgstr[0] "%u выход"
+msgstr[1] "%u выхода"
+msgstr[2] "%u выходов"
 
-#: ../gvc/gvc-mixer-control.c:1316
+#: ../gvc/gvc-mixer-control.c:1320
 msgid "System Sounds"
 msgstr "Системные звуки"
 
 #: ../power-icon/src/meego-power-icon.c:46
 msgid "MeeGo Power Icon"
-msgstr "Значок электропитания MeeGo"
+msgstr "Значок питания MeeGo"
 
 #: ../power-icon/src/mpd-power-icon.c:77
 msgid "Running low on battery"
 msgstr "Заряд батареи на исходе"
 
 #: ../power-icon/src/mpd-power-icon.c:78
-msgid "I've noticed that your battery is running a bit low. If you can, it would be a good idea to plug in and top up."
-msgstr "Заряд батареи на исходе. При возможности подключите шнур питания и зарядите ее."
+msgid ""
+"I've noticed that your battery is running a bit low. If you can, it would be"
+" a good idea to plug in and top up."
+msgstr "Заряд батареи на исходе. Подключите питание, если это возможно."
 
 #: ../power-icon/src/mpd-power-icon.c:81
 msgid "Getting close to empty"
 msgstr "Заряд практически исчерпан"
 
 #: ../power-icon/src/mpd-power-icon.c:82
-msgid "You're running quite low on battery. It'd be a good idea to save all your work and plug in as soon as you can."
-msgstr "Заряд батареи практически исчерпан. Сохраните результаты своей работы и как можно быстрее подключите шнур питания."
+msgid ""
+"You're running quite low on battery. It'd be a good idea to save all your "
+"work and plug in as soon as you can."
+msgstr ""
+"Заряд батареи практически исчерпан. Сохраните результаты своей работы и как "
+"можно быстрее подключите питание."
 
 #: ../power-icon/src/mpd-power-icon.c:86
 msgid "Danger!"
 msgstr "Внимание!"
 
 #: ../power-icon/src/mpd-power-icon.c:87
-msgid "Sorry, your computer is about to run out of battery. I'm going to have to turn off now. Please save your work and hope to see you again soon."
-msgstr "Заряд батареи исчерпан и компьютер будет выключен. Сохраните свою работу, и до скорой встречи!"
+msgid ""
+"Sorry, your computer is about to run out of battery. I'm going to have to go"
+" to sleep now. Please save your work and hope to see you again soon."
+msgstr ""
 
-#: ../power-icon/src/mpd-power-icon.c:435
+#: ../power-icon/src/mpd-power-icon.c:494
 msgid "battery"
 msgstr "батарея"
 
@@ -100,8 +114,9 @@ msgstr "батарея"
 #, c-format
 msgid "If you don't decide, I'll turn off in %d second"
 msgid_plural "If you don't decide, I'll turn off in %d seconds"
-msgstr[0] "Если вы ничего не предпримите, компьютер отключится через %d секунду."
-msgstr[1] "Если вы ничего не предпримите, компьютер отключится через %d секунд."
+msgstr[0] "Если ничего не предпринять, отключение произойдёт через %d секунду"
+msgstr[1] "Если ничего не предпринять, отключение произойдёт через %d секунды"
+msgstr[2] "Если ничего не предпринять, отключение произойдёт через %d секунд"
 
 #: ../power-icon/src/mpd-shutdown-notification.c:130
 msgid "Turn off"
@@ -109,45 +124,48 @@ msgstr "Отключить"
 
 #: ../power-icon/src/mpd-shutdown-notification.c:184
 msgid "Would you like to turn off now?"
-msgstr "Отключить питание немедленно?"
+msgstr "Отключить питание?"
 
 #: ../power-icon/src/mpd-shutdown-notification.c:185
 msgid "If you don't decide, I'll turn off in 30 seconds."
-msgstr "Если вы ничего не предпримите, компьютер отключится через 30 секунд."
+msgstr "Если ничего не предпринять, компьютер отключится через 30 секунд."
 
 #: ../src/meego-panel-devices.c:126
 msgid "MeeGo Devices Panel"
 msgstr "Панель устройств MeeGo"
 
-#: ../src/mpd-battery-device.c:371
+#: ../src/mpd-battery-device.c:381
 #, c-format
 msgid "Sorry, you don't appear to have a battery installed."
 msgstr "Похоже, у вас отсутствует батарея."
 
-#: ../src/mpd-battery-device.c:375
-#, c-format
-msgid "Your battery is charging. It is about %d%% full."
-msgstr "Батарея заряжается. Ее заряд составляет %d%%."
-
-#: ../src/mpd-battery-device.c:380
-#, c-format
-msgid "Your battery is being used. It is about %d%% full."
-msgstr "Батарея используется. Ее заряд составляет %d%%."
-
 #: ../src/mpd-battery-device.c:385
 #, c-format
-msgid "Your battery is fully charged and you're ready to go."
-msgstr "Батарея заряжена полностью, можете продолжить работу."
+msgid "Your battery is charging. It is about %d%% full."
+msgstr "Батарея заряжается. Её заряд составляет %d%%."
 
-#: ../src/mpd-battery-device.c:389
+#: ../src/mpd-battery-device.c:390
+#, c-format
+msgid "Your battery is being used. It is about %d%% full."
+msgstr "Батарея используется. Её заряд составляет %d%%."
+
+#: ../src/mpd-battery-device.c:395
+#, c-format
+msgid "Your battery is fully charged and you're ready to go."
+msgstr "Батарея полностью заряжена, можете продолжать работу."
+
+#: ../src/mpd-battery-device.c:399
 #, c-format
 msgid "Sorry, it looks like your battery is broken."
-msgstr "Похоже, ваша батарея неисправна."
+msgstr "Похоже, батарея неисправна."
 
-#. First row.
-#: ../src/mpd-brightness-tile.c:141
-msgid "Netbook brightness"
-msgstr "Яркость экрана нетбука"
+#: ../src/mpd-brightness-tile.c:297
+msgid "Display brightness - plugged in"
+msgstr "Яркость экрана — работа от сети"
+
+#: ../src/mpd-brightness-tile.c:299
+msgid "Display brightness - on battery"
+msgstr "Яркость экрана — работа от батареи"
 
 #: ../src/mpd-computer-pane.c:119
 msgid "Your computer"
@@ -155,75 +173,86 @@ msgstr "Ваш компьютер"
 
 #: ../src/mpd-computer-pane.c:128
 msgid "All settings"
-msgstr "Все настройки"
+msgstr "Все параметры"
 
 #: ../src/mpd-default-device-tile.c:107
 msgid ""
 "Plug in a device and it will\n"
 "be automatically detected."
 msgstr ""
-"Подключите устройство,\n"
-"и оно будет обнаружено автоматически."
+"Подключите устройство — оно будет\n"
+"обнаружено автоматически."
 
-#: ../src/mpd-devices-pane.c:104
+#: ../src/mpd-devices-pane.c:107
 msgid "Other devices"
 msgstr "Другие устройства"
 
-#: ../src/mpd-devices-tile.c:61
-msgid "Ejecting failed, looks like an application is using it"
-msgstr "Операция извлечения была выполнена неудачно так как устройство, скорее всего, используется программным обеспечением"
+#: ../src/mpd-devices-tile.c:66
+msgid "Sorry, we can't eject at the moment"
+msgstr ""
 
-#: ../src/mpd-devices-tile.c:423
+#: ../src/mpd-devices-tile.c:72
+#, c-format
+msgid "Sorry, we can't eject because <b>%s</b> is using the disk"
+msgstr ""
+
+#: ../src/mpd-devices-tile.c:548
 msgid "It is safe to unplug this device now"
 msgstr "Сейчас можно безопасно извлечь устройство"
 
 #: ../src/mpd-disk-tile.c:65
 #, c-format
-msgid "<span font-weight='bold'>You are using</span> <span color='%s'>%d%% of %s</span>"
-msgstr "<span font-weight='bold'>Вы используете</span> <span color='%s'>%d%% из %s</span>"
+msgid ""
+"<span font-weight='bold'>You are using</span> <span color='%s'>%d%% of "
+"%s</span>"
+msgstr ""
+"<span font-weight='bold'>Используется</span> <span color='%s'>%d%% из "
+"%s</span>"
 
 #: ../src/mpd-folder-tile.c:186
 msgid "Trash"
 msgstr "Корзина"
 
-#: ../src/mpd-shell.c:126
+#: ../src/mpd-shell.c:128
 msgid "Devices"
 msgstr "Устройства"
 
-#: ../src/mpd-storage-device-tile.c:242
+#: ../src/mpd-storage-device-tile.c:243
 #, c-format
 msgid "Could not run \"%s\""
-msgstr "Не удалось запустить \"%s\""
+msgstr "Не удалось запустить «%s»"
 
-#: ../src/mpd-storage-device-tile.c:244
+#: ../src/mpd-storage-device-tile.c:245
 msgid "Import error"
-msgstr "Ошибка импорта"
+msgstr "Ошибка импортирования"
 
-# If space is a problem, we can use an equally good alternative "Импорт фото"
-#: ../src/mpd-storage-device-tile.c:355
+#: ../src/mpd-storage-device-tile.c:356
 msgid "Import photos"
 msgstr "Импорт фотографий"
 
-#: ../src/mpd-storage-device-tile.c:357
+#: ../src/mpd-storage-device-tile.c:358
 msgid "Import media"
 msgstr "Импорт медиа-данных"
 
-#. Eject button
-#: ../src/mpd-storage-device-tile.c:615
-msgid "Eject"
-msgstr "Извлечь"
-
 #. Open button
-#: ../src/mpd-storage-device-tile.c:626
+#: ../src/mpd-storage-device-tile.c:649
 msgid "Open"
 msgstr "Открыть"
 
-#: ../src/mpd-storage-device-tile.c:819
-#, c-format
-msgid "<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
-msgstr "<span font-weight='bold'>%s</span> использует <span color='%s'>%d%% из %s</span>"
+#. Eject button
+#: ../src/mpd-storage-device-tile.c:655
+msgid "Eject"
+msgstr "Извлечь"
 
-#: ../src/mpd-storage-device-tile.c:827
+#: ../src/mpd-storage-device-tile.c:859
+#, c-format
+msgid ""
+"<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
+msgstr ""
+"<span font-weight='bold'>%s</span> использует <span color='%s'>%d%% из "
+"%s</span>"
+
+#: ../src/mpd-storage-device-tile.c:867
 #, c-format
 msgid "<span font-weight='bold'>%s</span>"
 msgstr "<span font-weight='bold'>%s</span>"
@@ -264,263 +293,12 @@ msgstr "Очень тихо"
 msgid "Silent"
 msgstr "Без звука"
 
-# Will need to see it in actual UI in order to translate correctly. Is "Volume" an HDD volume (C:\, D:\, etc.) or is it something else?
 #: ../src/mpd-volume-tile.c:355
 msgid "Computer volume"
-msgstr "Том компьютера"
+msgstr "Громкость"
 
-#: ../src/mpd-volume-tile.c:371
+#: ../src/mpd-volume-tile.c:372
 msgid "Mute"
 msgstr "Без звука"
 
-#~ msgid "Meego Power Icon"
-#~ msgstr "Meego Power Icon"
 
-#~ msgid "Netbook volume"
-#~ msgstr "Громкость нетбука"
-
-#~ msgid ""
-#~ "<span font-weight='bold'>Importing data</span> <span color='%s'>%d%%</"
-#~ "span>"
-#~ msgstr ""
-#~ "<span font-weight='bold'>Импорт данных</span> <span color='%s'>%d%%</span>"
-
-#~ msgid "Stop"
-#~ msgstr "Стоп"
-
-#~ msgid ""
-#~ "%s nas been plugged in. You can use the Devices panel interact with it"
-#~ msgstr ""
-#~ "%s было подключено. Для взаимодействия с ним можно использовать панель "
-#~ "Устройства"
-
-#~ msgid "USB plugged in"
-#~ msgstr "USB подключено"
-
-#~ msgid "Show"
-#~ msgstr "Отобразить"
-
-#~ msgid "CompactFlash"
-#~ msgstr "CompactFlash"
-
-#~ msgid "MemoryStick"
-#~ msgstr "MemoryStick"
-
-#~ msgid "SmartMedia"
-#~ msgstr "SmartMedia"
-
-#~ msgid "SecureDigital"
-#~ msgstr "SecureDigital"
-
-#~ msgid "SD High Capacity"
-#~ msgstr "SD High Capacity"
-
-#~ msgid "Floppy"
-#~ msgstr "Дискета"
-
-#~ msgid "Zip"
-#~ msgstr "Zip-диск"
-
-#~ msgid "Jaz"
-#~ msgstr "Jaz"
-
-#~ msgid "CD"
-#~ msgstr "Компакт-диск"
-
-#~ msgid "DVD"
-#~ msgstr "DVD"
-
-#~ msgid "Blu-Ray"
-#~ msgstr "Blu-Ray"
-
-#~ msgid "HDDVD"
-#~ msgstr "HDDVD"
-
-#~ msgid "%s Drive"
-#~ msgstr "Диск %s"
-
-#~ msgid "%s %s Drive"
-#~ msgstr "Диск %s %s"
-
-#~ msgid "%s Hard Disk"
-#~ msgstr "Жесткий диск %s"
-
-#~ msgid "Hard Disk"
-#~ msgstr "Жесткий диск"
-
-#~ msgid "%s Solid-State Disk"
-#~ msgstr "Твердотельный диск %s"
-
-#~ msgid "Solid-State Disk"
-#~ msgstr "Твердотельный диск"
-
-#~ msgid "%s Media"
-#~ msgstr "Носитель %s"
-
-#~ msgid "No Media Detected"
-#~ msgstr "Носители не обнаружены"
-
-#~ msgid "MBR Partition Table"
-#~ msgstr "Таблица разделов MBR"
-
-#~ msgid "GUID Partition Table"
-#~ msgstr "Таблица разделов GUID"
-
-#~ msgid "Apple Partition Table"
-#~ msgstr "Таблица разделов Apple"
-
-#~ msgid "Partitioned"
-#~ msgstr "Содержащий разделы"
-
-#~ msgid "Not Partitioned"
-#~ msgstr "Не содержащий разделы"
-
-#~ msgid "SAS Expander"
-#~ msgstr "Расширитель SAS"
-
-#~ msgid "PATA Host Adapter"
-#~ msgstr "Хост-адаптер PATA"
-
-#~ msgid "SATA Host Adapter"
-#~ msgstr "Хост-адаптер SATA"
-
-#~ msgid "ATA Host Adapter"
-#~ msgstr "Хост-адаптер  ATA"
-
-#~ msgid "SAS Host Adapter"
-#~ msgstr "Хост-адаптер SAS"
-
-#~ msgid "SCSI Host Adapter"
-#~ msgstr "Хост-адаптер SCSI"
-
-#~ msgid "Host Adapter"
-#~ msgstr "Хост-адаптер"
-
-#~ msgid "Volume Group"
-#~ msgstr "Группа томов"
-
-#~ msgid "%s LVM2 Volume Group"
-#~ msgstr "Группа томов %s LVM2"
-
-#~ msgid "LVM2 Volume Group"
-#~ msgstr "Группа томов LVM2"
-
-#~ msgid "%s Free"
-#~ msgstr "%s свободно"
-
-#~ msgid "Unallocated Space"
-#~ msgstr "Нераспределенная область"
-
-#~ msgid "LVM2 VG Unallocated Space"
-#~ msgstr "Нераспределенная область LVM2 VG"
-
-#~ msgid "Logical Volume"
-#~ msgstr "Логический том"
-
-#~ msgid "LVM2 Logical Volume"
-#~ msgstr "Логический том LVM2"
-
-#~ msgid "%s %s Array"
-#~ msgstr "Массив %s %s"
-
-#~ msgid "%s Array"
-#~ msgstr "Массив %s"
-
-#~ msgid "RAID Array %s (%s)"
-#~ msgstr "RAID-массив %s (%s)"
-
-#~ msgid "RAID device %s"
-#~ msgstr "RAID-массив %s"
-
-#~ msgid "RAID"
-#~ msgstr "RAID"
-
-#~ msgid "RAID Array"
-#~ msgstr "RAID-массив"
-
-#~ msgid "Not Attached"
-#~ msgstr "Не подключено"
-
-#~ msgid "Faulty"
-#~ msgstr "Faulty"
-
-#~ msgid "Fully Synchronized"
-#~ msgstr "Полностью синхронизировано"
-
-#~ msgid "Writemostly"
-#~ msgstr "Writemostly"
-
-#~ msgid "Blocked"
-#~ msgstr "Blocked"
-
-#~ msgid "Spare"
-#~ msgstr "Spare"
-
-#~ msgid "Local Storage"
-#~ msgstr "Лоакльный накопитель"
-
-#~ msgid "Storage on %s"
-#~ msgstr "Накопитель на %s"
-
-#~ msgid "Multipath Devices"
-#~ msgstr "Устройства с несколькими путями"
-
-#~ msgid "Drives with multiple I/O paths"
-#~ msgstr "Устройства с несколькими путями ввода/вывода"
-
-#~ msgid "Multi-disk Devices"
-#~ msgstr "Устройства с несколькими дисками"
-
-#~ msgid "RAID, LVM and other logical drives"
-#~ msgstr "RAID, LVM и другие логические диски"
-
-#~ msgid "Peripheral Devices"
-#~ msgstr "Периферийные устройства"
-
-#~ msgid "USB, Firewire and other peripherals"
-#~ msgstr "USB, Firewire и другие внешние устройства"
-
-#~ msgid "Error enumerating devices: %s"
-#~ msgstr "Ошибка регистрации устройств: %s"
-
-#~ msgid "Error enumerating adapters: %s"
-#~ msgstr "Ошибка регистрации адаптеров: %s"
-
-#~ msgid "Error enumerating expanders: %s"
-#~ msgstr "Ошибка регистрации расширителей: %s"
-
-#~ msgid "Error enumerating ports: %s"
-#~ msgstr "Ошибка регистрации портов: %s"
-
-#~ msgid "Error listening to address `localhost:%d': %s: %s\n"
-#~ msgstr "Ошибка прослушивания адреса `localhost:%d': %s: %s\n"
-
-#~ msgid ""
-#~ "Error creating a local TCP server, tried binding to ports 9000-10000 on "
-#~ "localhost"
-#~ msgstr ""
-#~ "Ошибка создания локального TCP-сервера, попытка привязки к портам 9000-"
-#~ "10000 на рабочей станции"
-
-#~ msgid "Error setting auth mechanisms on local DBusServer\n"
-#~ msgstr "Ошибка установки механизмов авторизации на локальном DBusServer\n"
-
-#~ msgid "Unable to parse command-line `%s' (Malformed address?): %s"
-#~ msgstr ""
-#~ "Невозможно интерпретировать командную строку `%s' (Неправильный адрес?): %"
-#~ "s"
-
-#~ msgid "Unable to spawn ssh program: %s"
-#~ msgstr "Невозможно создать программу ssh: %s"
-
-#~ msgid "Error reading stderr output: %s"
-#~ msgstr "Ошибка чтения вывода stderr: %s"
-
-#~ msgid "Error reading stderr output: No content"
-#~ msgstr "Ошибка чтения вывода stderr: Содержимое отсутствует"
-
-#~ msgid "Error logging in"
-#~ msgstr "Ошибка регистрации в"
-
-#~ msgid "Error sending `%s': %s"
-#~ msgstr "Ошибка отправки `%s': %s"

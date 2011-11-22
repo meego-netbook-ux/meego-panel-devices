@@ -1,22 +1,22 @@
-# Translation of meego-panel-devices into Indonesian
-# Copyright (C) 2010 THE meego-panel-device'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the meego-panel-devices package.
-# Andika Triwidada <andika@gmail.com>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # 
+# Translators:
+# Dimitris Glezos <glezos@indifex.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: meego-panel-devices master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-02 23:58+0000\n"
-"PO-Revision-Date: 2010-05-05 19:40+0700\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
-"Language-Team: Indonesian <id@li.org>\n"
+"Project-Id-Version: meego-panel-devices\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-04 17:59+0000\n"
+"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"Language-Team: Indonesian (http://www.transifex.net/projects/p/meego/team/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Poedit-Language: Indonesian\n"
-"X-Poedit-Country: Indonesia\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #: ../data/meego-panel-devices.desktop.in.in.h:1
 msgid "Devices panel"
@@ -32,18 +32,22 @@ msgid "Sleep timeout"
 msgstr "Timeout tidur"
 
 #: ../data/meego-panel-devices.schemas.in.h:2
-msgid "Value of -1 means never sleep, other values are seconds of continuous idle state before sleeping."
-msgstr "Nilai -1 berarti tak pernah tidur, nilai lain adalah lamanya menganggur terus-menerus dalam detik sebelum tidur."
+msgid ""
+"Value of -1 means never sleep, other values are seconds of continuous idle "
+"state before sleeping."
+msgstr ""
+"Nilai -1 berarti tak pernah tidur, nilai lain adalah lamanya menganggur "
+"terus-menerus dalam detik sebelum tidur."
 
 #. translators:
 #. * The device has been disabled
-#: ../gvc/gvc-mixer-control.c:1003
+#: ../gvc/gvc-mixer-control.c:1005
 msgid "Disabled"
 msgstr "Dimatikan"
 
 #. translators:
 #. * The number of sound outputs on a particular device
-#: ../gvc/gvc-mixer-control.c:1010
+#: ../gvc/gvc-mixer-control.c:1012
 #, c-format
 msgid "%u Output"
 msgid_plural "%u Outputs"
@@ -51,13 +55,13 @@ msgstr[0] "%u Keluaran"
 
 #. translators:
 #. * The number of sound inputs on a particular device
-#: ../gvc/gvc-mixer-control.c:1020
+#: ../gvc/gvc-mixer-control.c:1022
 #, c-format
 msgid "%u Input"
 msgid_plural "%u Inputs"
 msgstr[0] "%u Masukan"
 
-#: ../gvc/gvc-mixer-control.c:1316
+#: ../gvc/gvc-mixer-control.c:1320
 msgid "System Sounds"
 msgstr "Suara Sistem"
 
@@ -70,26 +74,36 @@ msgid "Running low on battery"
 msgstr "Baterai hampir habis"
 
 #: ../power-icon/src/mpd-power-icon.c:78
-msgid "I've noticed that your battery is running a bit low. If you can, it would be a good idea to plug in and top up."
-msgstr "Baterai Anda hampir habis. Alangkah baiknya apabila Anda menyambung ke listrik dan mengisinya."
+msgid ""
+"I've noticed that your battery is running a bit low. If you can, it would be"
+" a good idea to plug in and top up."
+msgstr ""
+"Baterai Anda hampir habis. Alangkah baiknya apabila Anda menyambung ke "
+"listrik dan mengisinya."
 
 #: ../power-icon/src/mpd-power-icon.c:81
 msgid "Getting close to empty"
 msgstr "Nyaris habis"
 
 #: ../power-icon/src/mpd-power-icon.c:82
-msgid "You're running quite low on battery. It'd be a good idea to save all your work and plug in as soon as you can."
-msgstr "Baterai Anda nyaris habis. Sebaiknya Anda menyimpan semua pekerjaan Anda dan menyambung ke listrik secepatnya."
+msgid ""
+"You're running quite low on battery. It'd be a good idea to save all your "
+"work and plug in as soon as you can."
+msgstr ""
+"Baterai Anda nyaris habis. Sebaiknya Anda menyimpan semua pekerjaan Anda dan"
+" menyambung ke listrik secepatnya."
 
 #: ../power-icon/src/mpd-power-icon.c:86
 msgid "Danger!"
 msgstr "Bahaya!"
 
 #: ../power-icon/src/mpd-power-icon.c:87
-msgid "Sorry, your computer is about to run out of battery. I'm going to have to turn off now. Please save your work and hope to see you again soon."
-msgstr "Maaf, baterai komputer Anda sekejap lagi habis. Kami mesti mematikan sekarang. Silakan simpan hasil kerja Anda dan semoga kita segera bertemu lagi."
+msgid ""
+"Sorry, your computer is about to run out of battery. I'm going to have to go"
+" to sleep now. Please save your work and hope to see you again soon."
+msgstr ""
 
-#: ../power-icon/src/mpd-power-icon.c:486
+#: ../power-icon/src/mpd-power-icon.c:494
 msgid "battery"
 msgstr "baterai"
 
@@ -164,66 +178,76 @@ msgstr ""
 "Tancapkan suatu perangkat\n"
 "itu akan otomatis dikenali."
 
-#: ../src/mpd-devices-pane.c:104
+#: ../src/mpd-devices-pane.c:107
 msgid "Other devices"
 msgstr "Perangkat lain"
 
-#: ../src/mpd-devices-tile.c:61
-msgid "Ejecting failed, looks like an application is using it"
-msgstr "Eject gagal, sepertinya suatu aplikasi sedang memakainya"
+#: ../src/mpd-devices-tile.c:66
+msgid "Sorry, we can't eject at the moment"
+msgstr ""
 
-#: ../src/mpd-devices-tile.c:423
+#: ../src/mpd-devices-tile.c:72
+#, c-format
+msgid "Sorry, we can't eject because <b>%s</b> is using the disk"
+msgstr ""
+
+#: ../src/mpd-devices-tile.c:548
 msgid "It is safe to unplug this device now"
 msgstr "Kini aman untuk mencopot perangkat ini"
 
 #: ../src/mpd-disk-tile.c:65
 #, c-format
-msgid "<span font-weight='bold'>You are using</span> <span color='%s'>%d%% of %s</span>"
-msgstr "<span font-weight='bold'>Anda memakai</span> <span color='%s'>%d%% dari %s</span>"
+msgid ""
+"<span font-weight='bold'>You are using</span> <span color='%s'>%d%% of "
+"%s</span>"
+msgstr ""
+"<span font-weight='bold'>Anda memakai</span> <span color='%s'>%d%% dari "
+"%s</span>"
 
 #: ../src/mpd-folder-tile.c:186
 msgid "Trash"
 msgstr "Tong Sampah"
 
-#: ../src/mpd-shell.c:126
+#: ../src/mpd-shell.c:128
 msgid "Devices"
 msgstr "Perangkat"
 
-#: ../src/mpd-storage-device-tile.c:241
+#: ../src/mpd-storage-device-tile.c:243
 #, c-format
 msgid "Could not run \"%s\""
 msgstr "Tak bisa menjalankan \"%s\""
 
-#: ../src/mpd-storage-device-tile.c:243
+#: ../src/mpd-storage-device-tile.c:245
 msgid "Import error"
 msgstr "Kesalahan impor"
 
-#: ../src/mpd-storage-device-tile.c:354
+#: ../src/mpd-storage-device-tile.c:356
 msgid "Import photos"
 msgstr "Impor foto"
 
-#: ../src/mpd-storage-device-tile.c:356
+#: ../src/mpd-storage-device-tile.c:358
 msgid "Import media"
 msgstr "Impor media"
 
-#. * Column 2: buttons
-#. 
 #. Open button
-#: ../src/mpd-storage-device-tile.c:633
+#: ../src/mpd-storage-device-tile.c:649
 msgid "Open"
 msgstr "Buka"
 
 #. Eject button
-#: ../src/mpd-storage-device-tile.c:646
+#: ../src/mpd-storage-device-tile.c:655
 msgid "Eject"
 msgstr "Keluarkan"
 
-#: ../src/mpd-storage-device-tile.c:867
+#: ../src/mpd-storage-device-tile.c:859
 #, c-format
-msgid "<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
-msgstr "<span font-weight='bold'>%s</span> memakai <span color='%s'>%d%% dari %s</span>"
+msgid ""
+"<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
+msgstr ""
+"<span font-weight='bold'>%s</span> memakai <span color='%s'>%d%% dari "
+"%s</span>"
 
-#: ../src/mpd-storage-device-tile.c:875
+#: ../src/mpd-storage-device-tile.c:867
 #, c-format
 msgid "<span font-weight='bold'>%s</span>"
 msgstr "<span font-weight='bold'>%s</span>"
@@ -268,21 +292,8 @@ msgstr "Tanpa suara"
 msgid "Computer volume"
 msgstr "Volume komputer"
 
-#: ../src/mpd-volume-tile.c:371
+#: ../src/mpd-volume-tile.c:372
 msgid "Mute"
 msgstr "Bisu"
 
-#~ msgid "Netbook brightness"
-#~ msgstr "Kecerahan netbook"
 
-#~ msgid "Meego Power Icon"
-#~ msgstr "Ikon Daya Meego"
-
-#~ msgid "<span font-weight='bold'>Importing data</span> <span color='%s'>%d%%</span>"
-#~ msgstr "<span font-weight='bold'>Mengimpor data</span> <span color='%s'>%d%%</span>"
-
-#~ msgid "Stop"
-#~ msgstr "Stop"
-
-#~ msgid "Netbook volume"
-#~ msgstr "Keras suara netbook"

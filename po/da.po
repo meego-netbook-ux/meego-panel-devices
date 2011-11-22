@@ -1,268 +1,302 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
+# Dimitris Glezos <glezos@indifex.com>, 2011.
+# Kris Thomsen <lakristho@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: meego-panel-devices\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-14 09:58+0000\n"
-"PO-Revision-Date: 2010-04-15 08:03+0100\n"
-"Last-Translator: Jon Hedemann <tradomusnordic@gmail.com>\n"
-"Language-Team: \n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-04 17:59+0000\n"
+"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"Language-Team: Danish (http://www.transifex.net/projects/p/meego/team/da/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Poedit-Language: Danish\n"
-"X-Poedit-Country: DENMARK\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../data/meego-panel-devices.desktop.in.in.h:1
 msgid "Devices panel"
 msgstr "Enhedspanel"
 
 #: ../data/meego-panel-devices.desktop.in.in.h:2
-#: ../src/meego-panel-devices.c:149
+#: ../src/meego-panel-devices.c:176
 msgid "devices"
 msgstr "enheder"
 
+#: ../data/meego-panel-devices.schemas.in.h:1
+msgid "Sleep timeout"
+msgstr "Dvaletidsudløb"
+
+#: ../data/meego-panel-devices.schemas.in.h:2
+msgid ""
+"Value of -1 means never sleep, other values are seconds of continuous idle "
+"state before sleeping."
+msgstr ""
+"En værdi på -1 betyder gå aldrig i dvale, andre værdier er antal sekunder af"
+" vedvarende stilstandsstatus før dvale."
+
 #. translators:
 #. * The device has been disabled
-#: ../gvc/gvc-mixer-control.c:1003
+#: ../gvc/gvc-mixer-control.c:1005
 msgid "Disabled"
 msgstr "Deaktiveret"
 
 #. translators:
 #. * The number of sound outputs on a particular device
-#: ../gvc/gvc-mixer-control.c:1010
+#: ../gvc/gvc-mixer-control.c:1012
 #, c-format
 msgid "%u Output"
 msgid_plural "%u Outputs"
-msgstr[0] "%u Output"
-msgstr[1] "%u Outputs"
+msgstr[0] "%u output"
+msgstr[1] "%u outputs"
 
 #. translators:
 #. * The number of sound inputs on a particular device
-#: ../gvc/gvc-mixer-control.c:1020
+#: ../gvc/gvc-mixer-control.c:1022
 #, c-format
 msgid "%u Input"
 msgid_plural "%u Inputs"
-msgstr[0] "%u Input"
-msgstr[1] "%u Inputs"
+msgstr[0] "%u input"
+msgstr[1] "%u inputs"
 
-#: ../gvc/gvc-mixer-control.c:1316
+#: ../gvc/gvc-mixer-control.c:1320
 msgid "System Sounds"
 msgstr "Systemlyde"
 
 #: ../power-icon/src/meego-power-icon.c:46
-#: ../power-icon/tests/test-battery-notification.c:58
-msgid "Meego Power Icon"
-msgstr "Meego-strømforsyningsikon"
+msgid "MeeGo Power Icon"
+msgstr "Strømikon for MeeGo"
 
-#: ../power-icon/src/mpd-power-icon.c:71
+#: ../power-icon/src/mpd-power-icon.c:77
 msgid "Running low on battery"
 msgstr "Lav batterikapacitet"
 
-#: ../power-icon/src/mpd-power-icon.c:72
-msgid "We've noticed that your battery is running a bit low. If you can it would be a good idea to plug in and top up."
-msgstr "Vi har bemærket, at batterikapaciteten er en smule lav. Hvis du har mulighed for det, anbefaler vi, at du oplader batteriet."
+#: ../power-icon/src/mpd-power-icon.c:78
+msgid ""
+"I've noticed that your battery is running a bit low. If you can, it would be"
+" a good idea to plug in and top up."
+msgstr ""
+"Jeg har bemærket at dit batteri er ved at have lav batterikapacitet. Hvis du"
+" har mulighed for det ville det være en god idé at sætte strøm til og lade "
+"op."
 
-#: ../power-icon/src/mpd-power-icon.c:75
+#: ../power-icon/src/mpd-power-icon.c:81
 msgid "Getting close to empty"
 msgstr "Meget lav batterikapacitet"
 
-#: ../power-icon/src/mpd-power-icon.c:76
-msgid "You're running quite low on battery. It'd be a good idea to save all your work and plug in as soon as you can"
-msgstr "Batterikapaciteten er meget lav. Vi anbefaler, at du gemmer alt dit arbejde og oplader batteriet hurtigst muligt."
+#: ../power-icon/src/mpd-power-icon.c:82
+msgid ""
+"You're running quite low on battery. It'd be a good idea to save all your "
+"work and plug in as soon as you can."
+msgstr ""
+"Du kører med en ret lav batterikapacitet. Det ville være en god idé at gemme"
+" dit arbejde og sætte strøm til så snart du kan."
 
-#: ../power-icon/src/mpd-power-icon.c:80
+#: ../power-icon/src/mpd-power-icon.c:86
 msgid "Danger!"
-msgstr "Advarsel!"
+msgstr "Fare!"
 
-#: ../power-icon/src/mpd-power-icon.c:81
-msgid "Sorry, your computer is about to run out of battery. We're going to have to turn off now. Please save your work and hope to see you again soon."
-msgstr "Beklager, men din computer er næste løbet tør for batteri. Vi bliver nødt til at lukke computeren ned. Gem venligst alt dit arbejde. På gensyn!"
+#: ../power-icon/src/mpd-power-icon.c:87
+msgid ""
+"Sorry, your computer is about to run out of battery. I'm going to have to go"
+" to sleep now. Please save your work and hope to see you again soon."
+msgstr ""
 
-#: ../power-icon/src/mpd-power-icon.c:311
-msgid "Would you like to turn off now?"
-msgstr "Vil du lukke computeren ned nu?"
-
-#: ../power-icon/src/mpd-power-icon.c:312
-msgid "If you don't decide I'll turn off in 30 seconds."
-msgstr "Hvis du foretager et valg, lukker computeren ned om 30 sekunder."
-
-#: ../power-icon/src/mpd-power-icon.c:377
+#: ../power-icon/src/mpd-power-icon.c:494
 msgid "battery"
 msgstr "batteri"
 
-#: ../power-icon/src/mpd-shutdown-notification.c:75
+#: ../power-icon/src/mpd-shutdown-notification.c:98
 #, c-format
-msgid "If you don't decide I'll turn off in %d seconds"
-msgstr "Hvis du foretager et valg, lukker computeren ned om %d sekunder."
+msgid "If you don't decide, I'll turn off in %d second"
+msgid_plural "If you don't decide, I'll turn off in %d seconds"
+msgstr[0] "Hvis du ikke beslutter dig, lukker jeg ned om %d sekund"
+msgstr[1] "Hvis du ikke beslutter dig, lukker jeg ned om %d sekunder"
 
-#: ../power-icon/src/mpd-shutdown-notification.c:133
+#: ../power-icon/src/mpd-shutdown-notification.c:130
 msgid "Turn off"
 msgstr "Luk ned"
 
-#: ../src/meego-panel-devices.c:120
-msgid "Meego Devices Panel"
-msgstr "Meego-enhedspanel"
+#: ../power-icon/src/mpd-shutdown-notification.c:184
+msgid "Would you like to turn off now?"
+msgstr "Vil du lukke computeren ned nu?"
 
-#: ../src/mpd-battery-device.c:333
+#: ../power-icon/src/mpd-shutdown-notification.c:185
+msgid "If you don't decide, I'll turn off in 30 seconds."
+msgstr "Hvis du ikke beslutter dig, lukker jeg ned om 30 sekunder."
+
+#: ../src/meego-panel-devices.c:126
+msgid "MeeGo Devices Panel"
+msgstr "Enhedspanel for MeeGo"
+
+#: ../src/mpd-battery-device.c:381
 #, c-format
 msgid "Sorry, you don't appear to have a battery installed."
-msgstr ""
+msgstr "Beklager, det ser ikke ud til at du har et batteri sat i."
 
-#: ../src/mpd-battery-device.c:337
+#: ../src/mpd-battery-device.c:385
 #, c-format
 msgid "Your battery is charging. It is about %d%% full."
-msgstr ""
+msgstr "Dit batteri oplader. Det er omkring %d%% fuld."
 
-#: ../src/mpd-battery-device.c:342
+#: ../src/mpd-battery-device.c:390
 #, c-format
 msgid "Your battery is being used. It is about %d%% full."
-msgstr ""
+msgstr "Dit batteri er i brug. Det er omkring %d%% fuld."
 
-#: ../src/mpd-battery-device.c:347
+#: ../src/mpd-battery-device.c:395
 #, c-format
 msgid "Your battery is fully charged and you're ready to go."
-msgstr ""
+msgstr "Dit batteri er fuldt opladet og du er klar til at køre."
 
-#: ../src/mpd-battery-device.c:351
+#: ../src/mpd-battery-device.c:399
 #, c-format
 msgid "Sorry, it looks like your battery is broken."
-msgstr ""
+msgstr "Beklager, det ser ud til at dit batteri er i stykker."
 
-#. First row.
-#: ../src/mpd-brightness-tile.c:143
-msgid "Netbook brightness"
-msgstr ""
+#: ../src/mpd-brightness-tile.c:297
+msgid "Display brightness - plugged in"
+msgstr "Skærmlysstyrke - sat til strøm"
 
-#: ../src/mpd-computer-pane.c:120
+#: ../src/mpd-brightness-tile.c:299
+msgid "Display brightness - on battery"
+msgstr "Skærmlysstyrke - på batteri"
+
+#: ../src/mpd-computer-pane.c:119
 msgid "Your computer"
-msgstr ""
+msgstr "Din computer"
 
-#: ../src/mpd-computer-pane.c:129
+#: ../src/mpd-computer-pane.c:128
 msgid "All settings"
-msgstr ""
+msgstr "Alle indstillinger"
 
 #: ../src/mpd-default-device-tile.c:107
 msgid ""
 "Plug in a device and it will\n"
 "be automatically detected."
 msgstr ""
+"Indsæt en enhed og den vil\n"
+"automatisk blive opdaget."
 
-#: ../src/mpd-devices-pane.c:105
+#: ../src/mpd-devices-pane.c:107
 msgid "Other devices"
+msgstr "Andre enheder"
+
+#: ../src/mpd-devices-tile.c:66
+msgid "Sorry, we can't eject at the moment"
 msgstr ""
+
+#: ../src/mpd-devices-tile.c:72
+#, c-format
+msgid "Sorry, we can't eject because <b>%s</b> is using the disk"
+msgstr ""
+
+#: ../src/mpd-devices-tile.c:548
+msgid "It is safe to unplug this device now"
+msgstr "Det er sikkert at fjerne denne enhed nu"
 
 #: ../src/mpd-disk-tile.c:65
 #, c-format
-msgid "<span font-weight='bold'>You are using</span> <span color='%s'>%d%% of %s</span>"
+msgid ""
+"<span font-weight='bold'>You are using</span> <span color='%s'>%d%% of "
+"%s</span>"
 msgstr ""
+"<span font-weight='bold'>Du bruger</span> <span color='%s'>%d%% af %s</span>"
 
-#: ../src/mpd-folder-tile.c:174
+#: ../src/mpd-folder-tile.c:186
 msgid "Trash"
-msgstr ""
+msgstr "Papirkurv"
 
-#: ../src/mpd-media-import-tile.c:73
-#, c-format
-msgid "<span font-weight='bold'>Importing data</span> <span color='%s'>%d%%</span>"
-msgstr ""
-
-#: ../src/mpd-media-import-tile.c:217
-msgid "Stop"
-msgstr ""
-
-#: ../src/mpd-shell.c:126
+#: ../src/mpd-shell.c:128
 msgid "Devices"
-msgstr ""
+msgstr "Enheder"
 
-#: ../src/mpd-storage-device-tile.c:164
+#: ../src/mpd-storage-device-tile.c:243
 #, c-format
-msgid "Could not run %s"
-msgstr ""
+msgid "Could not run \"%s\""
+msgstr "Kunne ikke køre \"%s\""
 
-#: ../src/mpd-storage-device-tile.c:165
+#: ../src/mpd-storage-device-tile.c:245
 msgid "Import error"
-msgstr ""
+msgstr "Importeringsfejl"
 
-#: ../src/mpd-storage-device-tile.c:256
-#, c-format
-msgid "%s nas been plugged in. You can use the Devices panel interact with it"
-msgstr ""
+#: ../src/mpd-storage-device-tile.c:356
+msgid "Import photos"
+msgstr "Importér billeder"
 
-#: ../src/mpd-storage-device-tile.c:259
-msgid "USB plugged in"
-msgstr ""
-
-#: ../src/mpd-storage-device-tile.c:260
-msgid "Show"
-msgstr ""
-
-#. Import button
-#: ../src/mpd-storage-device-tile.c:514
-msgid "Import data"
-msgstr ""
-
-#. Eject button
-#: ../src/mpd-storage-device-tile.c:525
-msgid "Eject"
-msgstr ""
+#: ../src/mpd-storage-device-tile.c:358
+msgid "Import media"
+msgstr "Importér media"
 
 #. Open button
-#: ../src/mpd-storage-device-tile.c:536
+#: ../src/mpd-storage-device-tile.c:649
 msgid "Open"
-msgstr ""
+msgstr "Åbn"
 
-#: ../src/mpd-storage-device-tile.c:725
+#. Eject button
+#: ../src/mpd-storage-device-tile.c:655
+msgid "Eject"
+msgstr "Skub ud"
+
+#: ../src/mpd-storage-device-tile.c:859
 #, c-format
-msgid "<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
+msgid ""
+"<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
 msgstr ""
+"<span font-weight='bold'>%s</span> bruger <span color='%s'>%d%% af %s</span>"
+
+#: ../src/mpd-storage-device-tile.c:867
+#, c-format
+msgid "<span font-weight='bold'>%s</span>"
+msgstr "<span font-weight='bold'>%s</span>"
 
 #: ../src/mpd-volume-tile.c:113
 msgid "Turned up to 11"
-msgstr ""
+msgstr "Skruet op på 11"
 
 #: ../src/mpd-volume-tile.c:115
 msgid "Very loud"
-msgstr ""
+msgstr "Meget højt"
 
 #: ../src/mpd-volume-tile.c:117
 msgid "Loud"
-msgstr ""
+msgstr "Højt"
 
 #: ../src/mpd-volume-tile.c:119
 msgid "Fairly loud"
-msgstr ""
+msgstr "Ret højt"
 
 #: ../src/mpd-volume-tile.c:121
 msgid "Middle of the road"
-msgstr ""
+msgstr "Middelvej"
 
 #: ../src/mpd-volume-tile.c:123
 msgid "Fairly quiet"
-msgstr ""
+msgstr "Ret stille"
 
 #: ../src/mpd-volume-tile.c:125
 msgid "Quiet"
-msgstr ""
+msgstr "Stille"
 
 #: ../src/mpd-volume-tile.c:127
 msgid "Very quiet"
-msgstr ""
+msgstr "Meget stille"
 
 #: ../src/mpd-volume-tile.c:129
 msgid "Silent"
-msgstr ""
+msgstr "Lydløs"
 
-#: ../src/mpd-volume-tile.c:357
-msgid "Netbook volume"
-msgstr ""
+#: ../src/mpd-volume-tile.c:355
+msgid "Computer volume"
+msgstr "Computerlydstyrke"
 
-#: ../src/mpd-volume-tile.c:373
+#: ../src/mpd-volume-tile.c:372
 msgid "Mute"
-msgstr ""
+msgstr "Stilhed"
+
 

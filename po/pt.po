@@ -1,22 +1,24 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
+# Translators:
+# Carlos  <crolidge@gmail.com>, 2011.
+# Dimitris Glezos <glezos@indifex.com>, 2011.
+# Sérgio Marques <smarquespt@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: meego-panel-devices\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-24 01:24+0000\n"
-"PO-Revision-Date: 2010-10-28 00:58-0000\n"
-"Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
-"Language-Team: \n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-04 17:59+0000\n"
+"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"Language-Team: Portuguese (http://www.transifex.net/projects/p/meego/team/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Language: Portuguese\n"
-"X-Poedit-Country: PORTUGAL\n"
+"Language: pt\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../data/meego-panel-devices.desktop.in.in.h:1
 msgid "Devices panel"
@@ -32,18 +34,22 @@ msgid "Sleep timeout"
 msgstr "Tempo até à suspensão"
 
 #: ../data/meego-panel-devices.schemas.in.h:2
-msgid "Value of -1 means never sleep, other values are seconds of continuous idle state before sleeping."
-msgstr "O valor \"-1\" significa não suspender. Outros valores são os segundos de inatividade antes de suspender."
+msgid ""
+"Value of -1 means never sleep, other values are seconds of continuous idle "
+"state before sleeping."
+msgstr ""
+"O valor \"-1\" significa não suspender. Outros valores são os segundos de "
+"inatividade antes de suspender."
 
 #. translators:
 #. * The device has been disabled
-#: ../gvc/gvc-mixer-control.c:1003
+#: ../gvc/gvc-mixer-control.c:1005
 msgid "Disabled"
 msgstr "Desativado"
 
 #. translators:
 #. * The number of sound outputs on a particular device
-#: ../gvc/gvc-mixer-control.c:1010
+#: ../gvc/gvc-mixer-control.c:1012
 #, c-format
 msgid "%u Output"
 msgid_plural "%u Outputs"
@@ -52,46 +58,56 @@ msgstr[1] "%u saídas"
 
 #. translators:
 #. * The number of sound inputs on a particular device
-#: ../gvc/gvc-mixer-control.c:1020
+#: ../gvc/gvc-mixer-control.c:1022
 #, c-format
 msgid "%u Input"
 msgid_plural "%u Inputs"
 msgstr[0] "%u entrada"
 msgstr[1] "%u entradas"
 
-#: ../gvc/gvc-mixer-control.c:1316
+#: ../gvc/gvc-mixer-control.c:1320
 msgid "System Sounds"
-msgstr "Sons do sistema"
+msgstr "Sons do Sistema"
 
 #: ../power-icon/src/meego-power-icon.c:46
 msgid "MeeGo Power Icon"
-msgstr "Ícone de energia MeeGo "
+msgstr "Ícone de Energia MeeGo "
 
 #: ../power-icon/src/mpd-power-icon.c:77
 msgid "Running low on battery"
 msgstr "A bateria está fraca"
 
 #: ../power-icon/src/mpd-power-icon.c:78
-msgid "I've noticed that your battery is running a bit low. If you can, it would be a good idea to plug in and top up."
-msgstr "Verificou-se que a sua bateria está um pouco fraca. Talvez seja boa ideia ligar o computador à corrente."
+msgid ""
+"I've noticed that your battery is running a bit low. If you can, it would be"
+" a good idea to plug in and top up."
+msgstr ""
+"Verificou-se que a sua bateria está um pouco fraca. Talvez seja boa ideia "
+"ligar o computador à corrente."
 
 #: ../power-icon/src/mpd-power-icon.c:81
 msgid "Getting close to empty"
 msgstr "Perto de ficar vazia"
 
 #: ../power-icon/src/mpd-power-icon.c:82
-msgid "You're running quite low on battery. It'd be a good idea to save all your work and plug in as soon as you can."
-msgstr "A sua bateria está fraca. Deve gravar todos os seus trabalhos e ligar o computador à corrente."
+msgid ""
+"You're running quite low on battery. It'd be a good idea to save all your "
+"work and plug in as soon as you can."
+msgstr ""
+"A sua bateria está fraca. Deve gravar todos os seus trabalhos e ligar o "
+"computador à corrente."
 
 #: ../power-icon/src/mpd-power-icon.c:86
 msgid "Danger!"
 msgstr "Perigo!"
 
 #: ../power-icon/src/mpd-power-icon.c:87
-msgid "Sorry, your computer is about to run out of battery. I'm going to have to turn off now. Please save your work and hope to see you again soon."
-msgstr "O seu computador tem a bateria muito fraca. O computador vai ser desligado. Por favor, grave os seus trabalhos e vemo-nos em breve."
+msgid ""
+"Sorry, your computer is about to run out of battery. I'm going to have to go"
+" to sleep now. Please save your work and hope to see you again soon."
+msgstr ""
 
-#: ../power-icon/src/mpd-power-icon.c:486
+#: ../power-icon/src/mpd-power-icon.c:494
 msgid "battery"
 msgstr "bateria"
 
@@ -116,12 +132,12 @@ msgstr "Se não se decidir, o computador será desligado em 30 segundos."
 
 #: ../src/meego-panel-devices.c:126
 msgid "MeeGo Devices Panel"
-msgstr "Painel de dispositivos Meego"
+msgstr "Painel de Dispositivos Meego"
 
 #: ../src/mpd-battery-device.c:381
 #, c-format
 msgid "Sorry, you don't appear to have a battery installed."
-msgstr "Desculpe, mas parece que você não tem uma bateria."
+msgstr "Lamento, mas parece que você não tem uma bateria."
 
 #: ../src/mpd-battery-device.c:385
 #, c-format
@@ -141,7 +157,7 @@ msgstr "A bateria está completamente carregada."
 #: ../src/mpd-battery-device.c:399
 #, c-format
 msgid "Sorry, it looks like your battery is broken."
-msgstr "Desculpe, mas parece que a bateria está danificada."
+msgstr "Lamento, mas parece que a bateria está danificada."
 
 #: ../src/mpd-brightness-tile.c:297
 msgid "Display brightness - plugged in"
@@ -167,67 +183,76 @@ msgstr ""
 "Ligue um dispositivo e este\n"
 "será detetado automaticamente."
 
-#: ../src/mpd-devices-pane.c:104
+#: ../src/mpd-devices-pane.c:107
 msgid "Other devices"
 msgstr "Outros dispositivos"
 
-#: ../src/mpd-devices-tile.c:61
-msgid "Ejecting failed, looks like an application is using it"
-msgstr "Falha ao ejetar. Parece que uma aplicação está a utilizá-lo."
+#: ../src/mpd-devices-tile.c:66
+msgid "Sorry, we can't eject at the moment"
+msgstr ""
 
-#: ../src/mpd-devices-tile.c:423
+#: ../src/mpd-devices-tile.c:72
+#, c-format
+msgid "Sorry, we can't eject because <b>%s</b> is using the disk"
+msgstr ""
+
+#: ../src/mpd-devices-tile.c:548
 msgid "It is safe to unplug this device now"
 msgstr "É seguro remover este dispositivo"
 
 #: ../src/mpd-disk-tile.c:65
 #, c-format
-msgid "<span font-weight='bold'>You are using</span> <span color='%s'>%d%% of %s</span>"
-msgstr "<span font-weight='bold'>Você está a utilizar</span> <span color=\"%s\">%d%% de %s</span>"
+msgid ""
+"<span font-weight='bold'>You are using</span> <span color='%s'>%d%% of "
+"%s</span>"
+msgstr ""
+"<span font-weight='bold'>Você está a utilizar</span> <span color=\"%s\">%d%%"
+" de %s</span>"
 
 #: ../src/mpd-folder-tile.c:186
 msgid "Trash"
 msgstr "Lixo"
 
-#: ../src/mpd-shell.c:126
+#: ../src/mpd-shell.c:128
 msgid "Devices"
 msgstr "Dispositivos"
 
-#: ../src/mpd-storage-device-tile.c:241
+#: ../src/mpd-storage-device-tile.c:243
 #, c-format
 msgid "Could not run \"%s\""
 msgstr "Incapaz de executar \"%s\""
 
-#: ../src/mpd-storage-device-tile.c:243
+#: ../src/mpd-storage-device-tile.c:245
 msgid "Import error"
 msgstr "Erro de importação"
 
-#: ../src/mpd-storage-device-tile.c:354
+#: ../src/mpd-storage-device-tile.c:356
 msgid "Import photos"
 msgstr "Importar fotos"
 
-#: ../src/mpd-storage-device-tile.c:356
+#: ../src/mpd-storage-device-tile.c:358
 msgid "Import media"
-msgstr "Importar \"media\""
+msgstr "Importar multimédia"
 
-#.
-#. * Column 2: buttons
-#.
 #. Open button
-#: ../src/mpd-storage-device-tile.c:633
+#: ../src/mpd-storage-device-tile.c:649
 msgid "Open"
 msgstr "Abrir"
 
 #. Eject button
-#: ../src/mpd-storage-device-tile.c:646
+#: ../src/mpd-storage-device-tile.c:655
 msgid "Eject"
 msgstr "Ejetar"
 
-#: ../src/mpd-storage-device-tile.c:867
+#: ../src/mpd-storage-device-tile.c:859
 #, c-format
-msgid "<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
-msgstr "<span font-weight='bold'>%s</span> utilizando <span color=\"%s\">%d%% de %s</span>"
+msgid ""
+"<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
+msgstr ""
+"<span font-weight='bold'>%s</span> a utilizar <span color=\"%s\">%d%% de "
+"%s</span>"
 
-#: ../src/mpd-storage-device-tile.c:875
+#: ../src/mpd-storage-device-tile.c:867
 #, c-format
 msgid "<span font-weight='bold'>%s</span>"
 msgstr "<span font-weight='bold'>%s</span>"
@@ -250,7 +275,7 @@ msgstr "Relativamente alto"
 
 #: ../src/mpd-volume-tile.c:121
 msgid "Middle of the road"
-msgstr "Mediano"
+msgstr "Meio da rua"
 
 #: ../src/mpd-volume-tile.c:123
 msgid "Fairly quiet"
@@ -272,7 +297,8 @@ msgstr "Silencioso"
 msgid "Computer volume"
 msgstr "Volume do computador"
 
-#: ../src/mpd-volume-tile.c:371
+#: ../src/mpd-volume-tile.c:372
 msgid "Mute"
 msgstr "Silenciar"
+
 

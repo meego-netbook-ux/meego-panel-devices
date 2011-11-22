@@ -1,19 +1,24 @@
-# Pavel, 2010, 2004.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Dimitris Glezos <glezos@indifex.com>, 2011.
+# fri <pavelfric@seznam.cz>, 2011.
+#   <pavelfric@seznam.cz>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-24 01:24+0000\n"
-"PO-Revision-Date: 2004-01-01 03:38+0100\n"
-"Last-Translator: \n"
-"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Project-Id-Version: meego-panel-devices\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-10 13:31+0000\n"
+"Last-Translator: fri <pavelfric@seznam.cz>\n"
+"Language-Team: Czech (http://www.transifex.net/projects/p/meego/team/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Lokalize 1.0\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 
 #: ../data/meego-panel-devices.desktop.in.in.h:1
 msgid "Devices panel"
@@ -29,34 +34,40 @@ msgid "Sleep timeout"
 msgstr "Překročení času spánku"
 
 #: ../data/meego-panel-devices.schemas.in.h:2
-msgid "Value of -1 means never sleep, other values are seconds of continuous idle state before sleeping."
-msgstr "Hodnota -1 znamená, že spánek nikdy nebude, ostatní hodnoty představují sekundy nepřetržitého nečinného stavu před spaním."
+msgid ""
+"Value of -1 means never sleep, other values are seconds of continuous idle "
+"state before sleeping."
+msgstr ""
+"Hodnota -1 znamená, že spánek nikdy nebude, ostatní hodnoty představují "
+"sekundy nepřetržitého nečinného stavu před spaním."
 
 #. translators:
 #. * The device has been disabled
-#: ../gvc/gvc-mixer-control.c:1003
+#: ../gvc/gvc-mixer-control.c:1005
 msgid "Disabled"
 msgstr "Zakázáno"
 
 #. translators:
 #. * The number of sound outputs on a particular device
-#: ../gvc/gvc-mixer-control.c:1010
+#: ../gvc/gvc-mixer-control.c:1012
 #, c-format
 msgid "%u Output"
 msgid_plural "%u Outputs"
 msgstr[0] "%u výstup"
 msgstr[1] "%u výstupy"
+msgstr[2] "%u výstupů"
 
 #. translators:
 #. * The number of sound inputs on a particular device
-#: ../gvc/gvc-mixer-control.c:1020
+#: ../gvc/gvc-mixer-control.c:1022
 #, c-format
 msgid "%u Input"
 msgid_plural "%u Inputs"
 msgstr[0] "%u vstup"
 msgstr[1] "%u vstupy"
+msgstr[2] "%u vstupů"
 
-#: ../gvc/gvc-mixer-control.c:1316
+#: ../gvc/gvc-mixer-control.c:1320
 msgid "System Sounds"
 msgstr "Systémové zvuky"
 
@@ -69,26 +80,38 @@ msgid "Running low on battery"
 msgstr "Baterie ztrácí sílu"
 
 #: ../power-icon/src/mpd-power-icon.c:78
-msgid "I've noticed that your battery is running a bit low. If you can, it would be a good idea to plug in and top up."
-msgstr "Bylo zjištěno, že baterie ztrácí sílu. Je-li to možné, bylo by dobré ji zapojit do elektrické sítě a dobít."
+msgid ""
+"I've noticed that your battery is running a bit low. If you can, it would be"
+" a good idea to plug in and top up."
+msgstr ""
+"Bylo zjištěno, že baterie ztrácí sílu. Je-li to možné, bylo by dobré ji "
+"zapojit do elektrické sítě a dobít."
 
 #: ../power-icon/src/mpd-power-icon.c:81
 msgid "Getting close to empty"
 msgstr "Baterie je téměř prázdná"
 
 #: ../power-icon/src/mpd-power-icon.c:82
-msgid "You're running quite low on battery. It'd be a good idea to save all your work and plug in as soon as you can."
-msgstr "Baterie je poměrně slabá. Opravdu by bylo dobré uložit celou vaši práci, a potom ji, jakmile to bude možné, připojit k síti a nechat ji nabít."
+msgid ""
+"You're running quite low on battery. It'd be a good idea to save all your "
+"work and plug in as soon as you can."
+msgstr ""
+"Baterie je poměrně slabá. Opravdu by bylo dobré uložit celou vaši práci, a "
+"potom ji, jakmile to bude možné, připojit k síti a nechat ji nabít."
 
 #: ../power-icon/src/mpd-power-icon.c:86
 msgid "Danger!"
 msgstr "Nebezpečí!"
 
 #: ../power-icon/src/mpd-power-icon.c:87
-msgid "Sorry, your computer is about to run out of battery. I'm going to have to turn off now. Please save your work and hope to see you again soon."
-msgstr "Promiňte, ale váš počítač už je bez šťávy. Nyní bude vypnut. Uložte, prosím, všechnu svou práci a brzy na shledanou."
+msgid ""
+"Sorry, your computer is about to run out of battery. I'm going to have to go"
+" to sleep now. Please save your work and hope to see you again soon."
+msgstr ""
+"Promiňte, ale váš počítač už je bez šťávy. Nyní bude muset být uspán. "
+"Uložte, prosím, všechnu svou práci a brzy na shledanou."
 
-#: ../power-icon/src/mpd-power-icon.c:486
+#: ../power-icon/src/mpd-power-icon.c:494
 msgid "battery"
 msgstr "Baterie"
 
@@ -96,8 +119,9 @@ msgstr "Baterie"
 #, c-format
 msgid "If you don't decide, I'll turn off in %d second"
 msgid_plural "If you don't decide, I'll turn off in %d seconds"
-msgstr[0] "Pokud nebude přijato žádné rozhodnutí, dojde k vypnutí za %d sekundy."
-msgstr[1] "Pokud nebude přijato žádné rozhodnutí, dojde k vypnutí za %d sekund."
+msgstr[0] "Pokud se nerozhodnete, provedu vypnutí za %d sekundu"
+msgstr[1] "Pokud se nerozhodnete, provedu vypnutí za %d sekundy"
+msgstr[2] "Pokud se nerozhodnete, provedu vypnutí za %d sekund"
 
 #: ../power-icon/src/mpd-shutdown-notification.c:130
 msgid "Turn off"
@@ -164,66 +188,75 @@ msgstr ""
 "Zastrčte zařízení, a to bude\n"
 "automaticky rozpoznáno."
 
-#: ../src/mpd-devices-pane.c:104
+#: ../src/mpd-devices-pane.c:107
 msgid "Other devices"
 msgstr "Jiná zařízení"
 
-#: ../src/mpd-devices-tile.c:61
-msgid "Ejecting failed, looks like an application is using it"
-msgstr "Vysunutí se nezdařilo. Vypadá to, že zařízení je používáno nějakým programem."
+#: ../src/mpd-devices-tile.c:66
+msgid "Sorry, we can't eject at the moment"
+msgstr "Promiňte, ale nyní nelze provést vysunutí"
 
-#: ../src/mpd-devices-tile.c:423
+#: ../src/mpd-devices-tile.c:72
+#, c-format
+msgid "Sorry, we can't eject because <b>%s</b> is using the disk"
+msgstr ""
+"Promiňte, ale nyní nelze provést vysunutí, protože <b>%s</b> používá disk"
+
+#: ../src/mpd-devices-tile.c:548
 msgid "It is safe to unplug this device now"
 msgstr "Toto zařízení lze nyní bezpečně vytáhnout."
 
 #: ../src/mpd-disk-tile.c:65
 #, c-format
-msgid "<span font-weight='bold'>You are using</span> <span color='%s'>%d%% of %s</span>"
-msgstr "<span font-weight='bold'>Používáte</span> <span color='%s'>%d%% z %s</span>"
+msgid ""
+"<span font-weight='bold'>You are using</span> <span color='%s'>%d%% of "
+"%s</span>"
+msgstr ""
+"<span font-weight='bold'>Používáte</span> <span color='%s'>%d%% z %s</span>"
 
 #: ../src/mpd-folder-tile.c:186
 msgid "Trash"
 msgstr "Koš"
 
-#: ../src/mpd-shell.c:126
+#: ../src/mpd-shell.c:128
 msgid "Devices"
 msgstr "Zařízení"
 
-#: ../src/mpd-storage-device-tile.c:241
+#: ../src/mpd-storage-device-tile.c:243
 #, c-format
 msgid "Could not run \"%s\""
 msgstr "%s se nepodařilo spustit."
 
-#: ../src/mpd-storage-device-tile.c:243
+#: ../src/mpd-storage-device-tile.c:245
 msgid "Import error"
 msgstr "Chyba při zavádění"
 
-#: ../src/mpd-storage-device-tile.c:354
+#: ../src/mpd-storage-device-tile.c:356
 msgid "Import photos"
 msgstr "Zavést fotografie"
 
-#: ../src/mpd-storage-device-tile.c:356
+#: ../src/mpd-storage-device-tile.c:358
 msgid "Import media"
 msgstr "Zavést hudbu a film"
 
-#. * Column 2: buttons
-#. 
 #. Open button
-#: ../src/mpd-storage-device-tile.c:633
+#: ../src/mpd-storage-device-tile.c:649
 msgid "Open"
 msgstr "Otevřít"
 
 #. Eject button
-#: ../src/mpd-storage-device-tile.c:646
+#: ../src/mpd-storage-device-tile.c:655
 msgid "Eject"
 msgstr "Vysunout"
 
-#: ../src/mpd-storage-device-tile.c:867
+#: ../src/mpd-storage-device-tile.c:859
 #, c-format
-msgid "<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
-msgstr "<span font-weight='bold'>%s</span> používá <span color='%s'>%d%% z %s</span>"
+msgid ""
+"<span font-weight='bold'>%s</span> using <span color='%s'>%d%% of %s</span>"
+msgstr ""
+"<span font-weight='bold'>%s</span> používá <span color='%s'>%d%% z %s</span>"
 
-#: ../src/mpd-storage-device-tile.c:875
+#: ../src/mpd-storage-device-tile.c:867
 #, c-format
 msgid "<span font-weight='bold'>%s</span>"
 msgstr "<span font-weight='bold'>%s</span>"
@@ -268,177 +301,8 @@ msgstr "Tichý"
 msgid "Computer volume"
 msgstr "Hlasitost počítače"
 
-#: ../src/mpd-volume-tile.c:371
+#: ../src/mpd-volume-tile.c:372
 msgid "Mute"
 msgstr "Ztlumit"
 
-#~ msgid "Netbook brightness"
-#~ msgstr "Jas přenosného počítače"
 
-#~ msgid "Netbook volume"
-#~ msgstr "Netbook-Lautstärke"
-
-#~ msgid "Meego Power Icon"
-#~ msgstr "Meego Energiesymbol"
-
-#~ msgid "<span font-weight='bold'>Importing data</span> <span color='%s'>%d%%</span>"
-#~ msgstr "<span font-weight='bold'>Daten werden importiert</span> <span color='%s'>%d%%</span>"
-
-#~ msgid "Stop"
-#~ msgstr "Stop"
-
-#~ msgid "%s nas been plugged in. You can use the Devices panel interact with it"
-#~ msgstr "%s wurde angeschlossen. Du kannst es über das Panel Geräte benutzen."
-
-#~ msgid "USB plugged in"
-#~ msgstr "USB ist angeschlossen"
-
-#~ msgid "Show"
-#~ msgstr "Anzeigen"
-
-#~ msgid "CompactFlash"
-#~ msgstr "CompactFlash"
-
-#~ msgid "MemoryStick"
-#~ msgstr "Memory Stick"
-
-#~ msgid "SmartMedia"
-#~ msgstr "SmartMedia"
-
-#~ msgid "SecureDigital"
-#~ msgstr "SecureDigital"
-
-#~ msgid "SD High Capacity"
-#~ msgstr "SD High Capacity"
-
-#~ msgid "Floppy"
-#~ msgstr "Diskette"
-
-#~ msgid "Zip"
-#~ msgstr "Zip"
-
-#~ msgid "Jaz"
-#~ msgstr "Jaz"
-
-#~ msgid "CD"
-#~ msgstr "CD"
-
-#~ msgid "DVD"
-#~ msgstr "DVD"
-
-#~ msgid "Blu-Ray"
-#~ msgstr "Blu-ray"
-
-#~ msgid "HDDVD"
-#~ msgstr "HD DVD"
-
-#~ msgid "%s Drive"
-#~ msgstr "%s-Laufwerk"
-
-#~ msgid "%s %s Drive"
-#~ msgstr "%s %s-Laufwerk"
-
-#~ msgid "%s Hard Disk"
-#~ msgstr "%s Festplatte"
-
-#~ msgid "Hard Disk"
-#~ msgstr "Festplatte"
-
-#~ msgid "%s Solid-State Disk"
-#~ msgstr "%s Solid-State-Laufwerk"
-
-#~ msgid "Solid-State Disk"
-#~ msgstr "Solid-State-Laufwerk"
-
-#~ msgid "%s Media"
-#~ msgstr "%s Medium"
-
-#~ msgid "No Media Detected"
-#~ msgstr "Kein Medium gefunden"
-
-#~ msgid "MBR Partition Table"
-#~ msgstr "MBR Partitionstabelle"
-
-#~ msgid "GUID Partition Table"
-#~ msgstr "GUID Partitionstabelle"
-
-#~ msgid "Apple Partition Table"
-#~ msgstr "Apple Partitionstabelle"
-
-#~ msgid "Partitioned"
-#~ msgstr "Partitioniert"
-
-#~ msgid "Not Partitioned"
-#~ msgstr "Nicht Partitioniert"
-
-#~ msgid "SAS Expander"
-#~ msgstr "SAS-Expander"
-
-#~ msgid "PATA Host Adapter"
-#~ msgstr "PATA Hostadapter"
-
-#~ msgid "SATA Host Adapter"
-#~ msgstr "SATA Hostadapter"
-
-#~ msgid "ATA Host Adapter"
-#~ msgstr "ATA Hostadapter"
-
-#~ msgid "SAS Host Adapter"
-#~ msgstr "SAS Hostadapter"
-
-#~ msgid "SCSI Host Adapter"
-#~ msgstr "SCSI Hostadapter"
-
-#~ msgid "Host Adapter"
-#~ msgstr "Hostadapter"
-
-#~ msgid "Volume Group"
-#~ msgstr "Volume Group"
-
-#~ msgid "%s LVM2 Volume Group"
-#~ msgstr "%s LVM2 Volume Group"
-
-#~ msgid "LVM2 Volume Group"
-#~ msgstr "LVM2 Volume Group"
-
-#~ msgid "%s Free"
-#~ msgstr "%s frei"
-
-#~ msgid "Unallocated Space"
-#~ msgstr "Nicht zugewiesener Platz"
-
-#~ msgid "LVM2 VG Unallocated Space"
-#~ msgstr "LVM2 VG Nicht zugeteilter Platz"
-
-#~ msgid "Logical Volume"
-#~ msgstr "Logischer Datenträger (Logical Volume)"
-
-#~ msgid "LVM2 Logical Volume"
-#~ msgstr "LVM2 Logischer Datenträger (Logical Volume)"
-
-#~ msgid "%s %s Array"
-#~ msgstr "%s %s Array"
-
-#~ msgid "%s Array"
-#~ msgstr "%s Array"
-
-#~ msgid "RAID Array %s (%s)"
-#~ msgstr "RAID-Array %s (%s)"
-
-#~ msgid "RAID device %s"
-#~ msgstr "RAID-Gerät %s"
-
-#~ msgid "RAID"
-#~ msgstr "RAID"
-
-#~ msgid "RAID Array"
-#~ msgstr "RAID-Array"
-
-#~ msgid "Not Attached"
-#~ msgstr "Nicht angeschlossen"
-
-#~ msgid "Faulty"
-#~ msgstr "Fehlerhaft"
-
-#~ msgid "Fully Synchronized"
-#~ msgstr "Voll synchronisiert"
