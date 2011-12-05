@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Dimitris Glezos <glezos@indifex.com>, 2011.
+#   <trans@novuscom.net>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: meego-panel-devices\n"
 "Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
 "POT-Creation-Date: 2011-11-04 12:46+0000\n"
-"PO-Revision-Date: 2011-11-04 17:59+0000\n"
-"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"PO-Revision-Date: 2011-11-28 05:21+0000\n"
+"Last-Translator: GLS_Translator_JPN <trans@novuscom.net>\n"
 "Language-Team: Japanese (http://www.transifex.net/projects/p/meego/team/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,7 @@ msgstr ""
 
 #: ../data/meego-panel-devices.desktop.in.in.h:1
 msgid "Devices panel"
-msgstr "デバイスパネル"
+msgstr "デバイス・パネル"
 
 #: ../data/meego-panel-devices.desktop.in.in.h:2
 #: ../src/meego-panel-devices.c:176
@@ -49,7 +50,7 @@ msgstr "無効"
 #, c-format
 msgid "%u Output"
 msgid_plural "%u Outputs"
-msgstr[0] ""
+msgstr[0] "%uの出力"
 
 #. translators:
 #. * The number of sound inputs on a particular device
@@ -57,7 +58,7 @@ msgstr[0] ""
 #, c-format
 msgid "%u Input"
 msgid_plural "%u Inputs"
-msgstr[0] ""
+msgstr[0] "%uの入力"
 
 #: ../gvc/gvc-mixer-control.c:1320
 msgid "System Sounds"
@@ -95,7 +96,7 @@ msgstr "危険な状態です!"
 msgid ""
 "Sorry, your computer is about to run out of battery. I'm going to have to go"
 " to sleep now. Please save your work and hope to see you again soon."
-msgstr ""
+msgstr "バッテリー残量がほとんどありません。スリープモードに入ります。作業中のファイルを保存し、充電後に再開してください。"
 
 #: ../power-icon/src/mpd-power-icon.c:494
 msgid "battery"
@@ -105,7 +106,7 @@ msgstr "バッテリー"
 #, c-format
 msgid "If you don't decide, I'll turn off in %d second"
 msgid_plural "If you don't decide, I'll turn off in %d seconds"
-msgstr[0] ""
+msgstr[0] "このままの状態では、%d 秒後に電源がオフになります。"
 
 #: ../power-icon/src/mpd-shutdown-notification.c:130
 msgid "Turn off"
@@ -150,11 +151,11 @@ msgstr "バッテリーが壊れているようです。"
 
 #: ../src/mpd-brightness-tile.c:297
 msgid "Display brightness - plugged in"
-msgstr ""
+msgstr "ディスプレイの明るさ - コンセント使用時"
 
 #: ../src/mpd-brightness-tile.c:299
 msgid "Display brightness - on battery"
-msgstr ""
+msgstr "ディスプレイの明るさ - バッテリー使用時"
 
 #: ../src/mpd-computer-pane.c:119
 msgid "Your computer"
@@ -178,12 +179,12 @@ msgstr "他のデバイス"
 
 #: ../src/mpd-devices-tile.c:66
 msgid "Sorry, we can't eject at the moment"
-msgstr ""
+msgstr "現在取り出しできません"
 
 #: ../src/mpd-devices-tile.c:72
 #, c-format
 msgid "Sorry, we can't eject because <b>%s</b> is using the disk"
-msgstr ""
+msgstr "<b>%s</b>がディスクを使用中のため現在取り出しできません"
 
 #: ../src/mpd-devices-tile.c:548
 msgid "It is safe to unplug this device now"

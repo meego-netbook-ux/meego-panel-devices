@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+#   <andrea.aguiar@infolink.com.br>, 2011.
 # Dimitris Glezos <glezos@indifex.com>, 2011.
 # Rodrigo Padula <contato@rodrigopadula.com>, 2011.
 msgid ""
@@ -10,8 +11,8 @@ msgstr ""
 "Project-Id-Version: meego-panel-devices\n"
 "Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
 "POT-Creation-Date: 2011-11-04 12:46+0000\n"
-"PO-Revision-Date: 2011-11-04 17:59+0000\n"
-"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"PO-Revision-Date: 2011-11-29 16:27+0000\n"
+"Last-Translator: GLS_Translator_PTB2 <andrea.aguiar@infolink.com.br>\n"
 "Language-Team: Portuguese (Brazilian) <l10n-pt-br@meego.org.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -105,6 +106,8 @@ msgid ""
 "Sorry, your computer is about to run out of battery. I'm going to have to go"
 " to sleep now. Please save your work and hope to see you again soon."
 msgstr ""
+"Infelizmente, seu computador está com bateria quase esgotada. Terei que "
+"desligar agora. Salve o seu trabalho e até logo."
 
 #: ../power-icon/src/mpd-power-icon.c:494
 msgid "battery"
@@ -188,12 +191,12 @@ msgstr "Outros dispositivos"
 
 #: ../src/mpd-devices-tile.c:66
 msgid "Sorry, we can't eject at the moment"
-msgstr ""
+msgstr "Sinto muito, não podemos ejetar no momento"
 
 #: ../src/mpd-devices-tile.c:72
 #, c-format
 msgid "Sorry, we can't eject because <b>%s</b> is using the disk"
-msgstr ""
+msgstr "Sinto muito, não podemos ejetar porque <b>%s</b> está usando o disco"
 
 #: ../src/mpd-devices-tile.c:548
 msgid "It is safe to unplug this device now"

@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Dimitris Glezos <glezos@indifex.com>, 2011.
+#   <rjming@yahoo.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: meego-panel-devices\n"
 "Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
 "POT-Creation-Date: 2011-11-04 12:46+0000\n"
-"PO-Revision-Date: 2011-11-04 17:59+0000\n"
-"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"PO-Revision-Date: 2011-11-28 20:15+0000\n"
+"Last-Translator: GLS_Translator_CHS2 <rjming@yahoo.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.net/projects/p/meego/team/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,13 +30,13 @@ msgstr "设备"
 
 #: ../data/meego-panel-devices.schemas.in.h:1
 msgid "Sleep timeout"
-msgstr ""
+msgstr "睡眠超时"
 
 #: ../data/meego-panel-devices.schemas.in.h:2
 msgid ""
 "Value of -1 means never sleep, other values are seconds of continuous idle "
 "state before sleeping."
-msgstr ""
+msgstr "值 -1 表示绝不睡眠，其他值表示进入睡眠之前连续处于闲置状态的秒数。"
 
 #. translators:
 #. * The device has been disabled
@@ -49,7 +50,7 @@ msgstr "禁用"
 #, c-format
 msgid "%u Output"
 msgid_plural "%u Outputs"
-msgstr[0] ""
+msgstr[0] "%u 输出"
 
 #. translators:
 #. * The number of sound inputs on a particular device
@@ -57,7 +58,7 @@ msgstr[0] ""
 #, c-format
 msgid "%u Input"
 msgid_plural "%u Inputs"
-msgstr[0] ""
+msgstr[0] "%u 输入"
 
 #: ../gvc/gvc-mixer-control.c:1320
 msgid "System Sounds"
@@ -95,7 +96,7 @@ msgstr "危险！"
 msgid ""
 "Sorry, your computer is about to run out of battery. I'm going to have to go"
 " to sleep now. Please save your work and hope to see you again soon."
-msgstr ""
+msgstr "抱歉，您计算机的电池即将用完。我现在不得不进入睡眠状态。请保存您的文件，再见。"
 
 #: ../power-icon/src/mpd-power-icon.c:494
 msgid "battery"
@@ -105,7 +106,7 @@ msgstr "电池"
 #, c-format
 msgid "If you don't decide, I'll turn off in %d second"
 msgid_plural "If you don't decide, I'll turn off in %d seconds"
-msgstr[0] ""
+msgstr[0] "如果您不作决定，我将在 %d 秒后关闭。"
 
 #: ../power-icon/src/mpd-shutdown-notification.c:130
 msgid "Turn off"
@@ -150,11 +151,11 @@ msgstr "抱歉,看起来您的电池坏掉了。"
 
 #: ../src/mpd-brightness-tile.c:297
 msgid "Display brightness - plugged in"
-msgstr ""
+msgstr "显示器亮度 - 电源插入"
 
 #: ../src/mpd-brightness-tile.c:299
 msgid "Display brightness - on battery"
-msgstr ""
+msgstr "显示器亮度 - 电池供电"
 
 #: ../src/mpd-computer-pane.c:119
 msgid "Your computer"
@@ -178,12 +179,12 @@ msgstr "其它设备"
 
 #: ../src/mpd-devices-tile.c:66
 msgid "Sorry, we can't eject at the moment"
-msgstr ""
+msgstr "抱歉，目前无法弹出"
 
 #: ../src/mpd-devices-tile.c:72
 #, c-format
 msgid "Sorry, we can't eject because <b>%s</b> is using the disk"
-msgstr ""
+msgstr "抱歉，<b>%s</b> 正在使用该磁盘，无法弹出"
 
 #: ../src/mpd-devices-tile.c:548
 msgid "It is safe to unplug this device now"

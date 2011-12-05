@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Dimitris Glezos <glezos@indifex.com>, 2011.
+# Romuald Pawlikowski <r.pawlikowski@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: meego-panel-devices\n"
 "Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
 "POT-Creation-Date: 2011-11-04 12:46+0000\n"
-"PO-Revision-Date: 2011-11-04 17:59+0000\n"
-"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"PO-Revision-Date: 2011-11-30 01:03+0000\n"
+"Last-Translator: GLS_Translator_PLK2 <r.pawlikowski@gmail.com>\n"
 "Language-Team: Polish (http://www.transifex.net/projects/p/meego/team/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -106,6 +107,8 @@ msgid ""
 "Sorry, your computer is about to run out of battery. I'm going to have to go"
 " to sleep now. Please save your work and hope to see you again soon."
 msgstr ""
+"Przepraszamy, w komputerze zaraz wyczerpie się bateria. Za chwilę nastąpi "
+"przejście w tryb uśpienia. Zapisz pracę i do zobaczenia wkrótce."
 
 #: ../power-icon/src/mpd-power-icon.c:494
 msgid "battery"
@@ -194,12 +197,14 @@ msgstr "Inne urządzenia"
 
 #: ../src/mpd-devices-tile.c:66
 msgid "Sorry, we can't eject at the moment"
-msgstr ""
+msgstr "Przepraszamy, wysunięcie jest obecnie niemożliwe"
 
 #: ../src/mpd-devices-tile.c:72
 #, c-format
 msgid "Sorry, we can't eject because <b>%s</b> is using the disk"
 msgstr ""
+"Przepraszamy, wysunięcie jest niemożliwe, ponieważ <b>%s</b> korzysta z "
+"dysku"
 
 #: ../src/mpd-devices-tile.c:548
 msgid "It is safe to unplug this device now"
